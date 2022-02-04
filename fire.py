@@ -201,38 +201,3 @@ class Firefox:
 
         timer = f'{date_Time_Obj}, " Firefox funcionou durante  {time.time() - start_time}'
         print(timer)
-
-
-    @staticmethod
-    def acesso_change(_):
-
-        router_info_00 = os.environ.get('RI01')
-        router_info_01 = os.environ.get('RI02')
-        load_dotenv()
-        sleep(med)
-        _.get("http://192.168.0.1/index.html")
-        sleep(med)
-        alfa = _.find_element(By.ID, "in_id")
-        alfa.click()
-        alfa.send_keys(router_info_00)
-        beta = _.find_element(By.ID, "in_pw")
-        beta.click()
-        sleep(med)
-        beta.send_keys(router_info_01)
-        sleep(med)
-        _.find_element(By.ID, "login-btn").click()
-        sleep(med)
-        _.find_element(By.LINK_TEXT, "Advanced Network Settings").click()
-        sleep(med)
-        _.find_element(By.LINK_TEXT, "Advanced").click()
-        sleep(med)
-        _.find_element(By.CSS_SELECTOR, '#sub-nav > li:nth-child(3) > a:nth-child(1)').click()
-        sleep(med)
-        _.find_element(By.CSS_SELECTOR, '#enable_5').click()
-        sleep(med)
-        _.find_element(By.CSS_SELECTOR, '.apply').click()
-        sleep(med)
-        _.find_element(By.CSS_SELECTOR, '#dialog3_confirmBtn').click()
-        sleep(15)
-        _.quit()
-
