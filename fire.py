@@ -22,8 +22,25 @@ short = 0.5
 class Firefox:
     def __init__(self):
 
-        global term
+        os.system('clear')
+        load_dotenv()
+
         term = f'marx'
+
+
+
+    @staticmethod
+    def driver_def(self):
+
+        _ = f'driver_web{randint(1, 999)}'
+        _ = webdriver.Firefox(executable_path="/usr/local/bin/geckodriver",
+                              service_log_path="geckodriver.log",
+                              firefox_profile="/home/studio/.mozilla/firefox/kg4tw3b7.default-release")
+
+        _.set_window_size(950, 1070)
+
+        return _
+
 
     @staticmethod
     def driver_web(self):
@@ -193,6 +210,19 @@ class Firefox:
 
 
     @staticmethod
+    def youtube(_, link):
+        _.get(link)
+        start_time = time.time()
+        date_Time_Obj = datetime.now()
+    
+        # sleep(15)
+        # _.quit()
+
+        timer = f'{date_Time_Obj} Firefox - Google funcionou durante  {time.time() - start_time}'
+        print(timer)
+
+
+    @staticmethod
     def server_view(_):
         _.get("127.0.0.1:8000")
 
@@ -201,3 +231,5 @@ class Firefox:
 
         timer = f'{date_Time_Obj}, " Firefox funcionou durante  {time.time() - start_time}'
         print(timer)
+
+

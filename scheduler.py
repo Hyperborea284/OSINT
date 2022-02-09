@@ -54,6 +54,14 @@ def scheduled_06():
 schedule.every().thursday.at("00:02").do(scheduled_06())
 
 
+def scheduled_07(link):
+    f7 = Firefox() 
+    fcr7 = f7.driver_def(f7)
+    f7.youtube(fcr7, link)
+
+schedule.every().wednesday.at("02:45").do(scheduled_07(link))
+
+
 #p1 = Process(target=server_start())
 #p2 = Process(target=timel())
 
