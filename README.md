@@ -19,6 +19,7 @@ How to use:
    https://python.land/virtual-environments/virtualenv
     
     cd OSINT/
+ 
     python -m venv .
 
 
