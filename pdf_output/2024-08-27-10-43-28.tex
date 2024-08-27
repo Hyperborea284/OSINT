@@ -1,0 +1,232 @@
+\documentclass[
+   article,       
+   12pt,          
+   oneside,       
+   a4paper,       
+   english,       
+   brazil,        
+   sumario=tradicional
+   ]{abntex2}
+
+\usepackage{lmodern}       
+\usepackage[T1]{fontenc}   
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}   
+\usepackage{nomencl}       
+\usepackage{color}         
+\usepackage{graphicx}      
+\usepackage{microtype}     
+\usepackage{background}
+\usepackage{datetime}
+\usepackage{lipsum} 
+\usepackage[brazilian,hyperpageref]{backref}
+\usepackage[alf]{abntex2cite}
+
+\newdateformat{mydate}{\THEDAY\space de \monthname[\THEMONTH], \THEYEAR}
+
+\backgroundsetup{
+   scale=1,
+   angle=0,
+   opacity=1,
+   color=black,
+   contents={\begin{tikzpicture}[remember picture, overlay]
+      \node at ([xshift=-2cm,yshift=-2cm] current page.north east)
+            {\includegraphics[width = 3cm]{logo_02.png}}
+       node at ([xshift=2cm,yshift=-2cm] current page.north west)
+            {\includegraphics[width = 3cm]{conf.png}};
+     \end{tikzpicture}}
+}
+
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+\renewcommand{\backref}{}
+\renewcommand*{\backrefalt}[4]{
+   \ifcase #1
+      Nenhuma citação no texto.
+   \or
+      Citado na página #2.
+   \else
+      Citado #1 vezes nas páginas #2.
+   \fi}
+
+\titulo{\section{Impacto das queimadas no interior de São Paulo: uma análise abrangente}
+\tituloestrangeiro{ }
+\autor{{Ephor - Linguística Computacional }}
+\local{{Maringá - Brasil \url{https://www.ephor.com.br/}}}
+\data{{\today\space \currenttime}}
+
+\definecolor{blue}{RGB}{41,5,195}
+\makeatletter
+\hypersetup{
+      pdftitle={\@title}, 
+      pdfauthor={\@author},
+      pdfsubject={Correntes da Antropologia},
+       pdfcreator={LaTeX with abnTeX2},
+      pdfkeywords={abnt}{latex}{abntex}{abntex2}{atigo científico}, 
+      colorlinks=true,   
+      linkcolor=blue,    
+      citecolor=blue,    
+      filecolor=magenta, 
+      urlcolor=blue,
+      bookmarksdepth=4
+}
+\makeatother
+\makeindex
+\setlrmarginsandblock{3cm}{3cm}{*}
+\setulmarginsandblock{3cm}{3cm}{*}
+\checkandfixthelayout
+\setlength{\parindent}{1.3cm}
+\setlength{\parskip}{0.2cm}
+\SingleSpacing
+
+\begin{document}
+
+\selectlanguage{brazil}
+\frenchspacing 
+\maketitle
+
+\textual
+\section{Aviso Importante}
+\textbf{Este documento foi gerado usando processamento de linguística computacional auxiliado por inteligência artificial.} Para tanto foram analisadas as seguintes fontes:  \cite{Conheca_a_cidade_de_17_mil_habitantes_que_lid}, \cite{Policia_prende_quarto_suspeito_de_participaca}, \cite{Queimadas_em_SP_causaram_prejuizo_de_R_1_bi_a}, \cite{Semana_de_queimadas_teve_saltos_de_338_em_SP_}.
+\textbf{Portanto este conteúdo requer revisão humana, pois pode conter erros.} Decisões jurídicas, de saúde, financeiras ou similares não devem ser tomadas com base somente neste documento. A Ephor - Linguística Computacional não se responsabiliza por decisões ou outros danos oriundos da tomada de decisão sem a consulta dos devidos especialistas.
+A consulta da originalidade deste conteúdo para fins de verificação de plágio pode ser feita em \href{http://www.ephor.com.br}{ephor.com.br}.
+\section{Impacto das queimadas no interior de São Paulo: uma análise abrangente}
+
+As queimadas no interior de São Paulo têm se tornado um evento perturbador com repercussões severas em diversos setores. Este fenômeno não apenas prejudica o meio ambiente, mas também impacta de maneira significativa a economia local, especialmente o setor agropecuário. Este texto busca oferecer uma análise abrangente dos efeitos destas queimadas, concentrando-se em diferentes aspectos como danos econômicos, suspeitas sobre a origem dos incêndios e respostas governamentais.
+
+\subsection{Prejuízos Econômicos}
+
+Inicialmente, o impacto econômico das queimadas é expressivo, com um prejuízo estimado em R$ 1 bilhão aos diversos segmentos da agropecuária \cite{Queimadas_em_SP_causaram_prejuizo_de_R_1_bi_a}. O levantamento aponta que aproximadamente 3.837 propriedades em 144 municípios sofreram com os incêndios. As cadeias produtivas mais afetadas incluem a bovinocultura de corte e de leite, a produção de cana-de-açúcar, a fruticultura, a heveicultura e a apicultura. Diante deste cenário, medidas emergenciais foram implementadas para suporte aos produtores rurais afetados. O governo do Estado de São Paulo disponibilizou um pacote de ajuda financeira de R$ 110 milhões, incluindo R$ 50 mil para cada produtor para despesas de custeio através do Feap e inclusão em programas habitacionais \cite{Queimadas_em_SP_causaram_prejuizo_de_R_1_bi_a}.
+
+\subsection{Origem dos Incêndios e Ações Criminosas}
+
+As suspeitas sobre a origem das queimadas sugerem fortemente uma ação humana deliberada. Este cenário é comprovado pela prisão de quatro indivíduos em áreas próximas a Ribeirão Preto, uma das regiões mais devastadas pelo fogo \cite{Policia_prende_quarto_suspeito_de_participaca}. Empresas impactadas, como a Raízen e o Grupo Moreno, acreditam em incêndios de natureza criminosa, exacerbados por fatores como estiagem, baixa umidade do ar, ação dos ventos e altas temperaturas. Esta visão é compartilhada pela Orplana, que estima um prejuízo específico de R$ 350 milhões para os produtores de cana-de-açúcar, considerando tanto as áreas prontas para colheita quanto as de rebrota da cana \cite{Conheca_a_cidade_de_17_mil_habitantes_que_lid}. 
+
+\subsection{Resposta das Autoridades e Necessidade de Ações Preventivas}
+
+Este panorama exige uma resposta firme das autoridades, com ações preventivas e investigações rigorosas dos atos criminosos. A Abag-RP reforça a importância de uma investigação aprofundada para combater os incêndios criminosos, uma luta antiga do setor \cite{Semana_de_queimadas_teve_saltos_de_338_em_SP_}. A colaboração entre governos, entidades do setor agropecuário e organizações ambientais é essencial para desenvolver estratégias efetivas de prevenção, minimizando os impactos negativos destes eventos sobre a economia local, a sustentabilidade da produção agrícola, bem como a preservação do meio ambiente.
+
+\subsection{Conclusão}
+
+As queimadas no interior de São Paulo representam um desafio complexo e multifacetado, que demanda uma abordagem integrada para sua solução. Através de esforços conjuntos, investigações aprofundadas e a implementação de medidas preventivas, é possível mitigar os efeitos negativos deste fenômeno, protegendo os meios de subsistência dos produtores rurais e preservando o valioso ecossistema da região.
+\section{Impacto dos Incêndios no Interior de São Paulo}
+
+Nos últimos períodos, o interior do estado de São Paulo tem enfrentado uma dramática elevação no número de queimadas, fenômeno que tem gerado preocupações tanto econômicas quanto ambientais. Este texto busca explorar de maneira detalhada as consequências desses eventos, com especial atenção aos danos causados à agropecuária, às comunidades afetadas, além de investigar as possíveis causas por trás desses incidentes devastadores. Para uma compreensão mais abrangente, este relato se aprofundará nas estatísticas recentes, nas respostas governamentais e na ação de criminosos, que juntos pintam um quadro complexo dessa crise.
+
+\subsection{A Escalada das Queimadas e Seus Prejuízos}
+
+Recentemente, o interior de São Paulo testemunhou um incremento significativo nos casos de incêndios, registrando um aumento de 338\% nos incidentes de queimadas no estado de São Paulo e de 236\% no estado de Mato Grosso \cite{Semana_de_queimadas_teve_saltos_de_338_em_SP_}. Essa elevação alarmante trouxe consigo prejuízos econômicos e ambientais extensos, afetando diversas regiões. As perdas para o setor agropecuário são estimadas preliminarmente em cerca de R\$ 1 bilhão \cite{Queimadas_em_SP_causaram_prejuizo_de_R_1_bi_a}, um valor que sublinha a gravidade do problema. Particularmente impactada, a região de Ribeirão Preto viu a ocorrência de vastos incêndios que levaram ao bloqueio de importantes estradas, influenciando direta e negativamente na bovinocultura, na produção de cana-de-açúcar, fruticultura, heveicultura e apicultura.
+
+\subsection{Medidas Governamentais e Ações Criminosas}
+
+Frente ao cenário de destruição, o governo estadual lançou um pacote de ajuda para os produtores rurais atingidos. As medidas incluem a disponibilização de R\$ 110 milhões, do Fundo de Expansão do Agronegócio Paulista (Feap), para auxiliar aproximadamente 3.837 propriedades em 144 municípios \cite{Conheca_a_cidade_de_17_mil_habitantes_que_lid}. Cada produtor afetado terá acesso a R\$ 50 mil, visando suportar as despesas de manutenção e recuperação da produção.
+
+Em meio aos estragos, a pauta da origem criminosa dos incêndios ganha espaço, com a prisão de quatro suspeitos acusados de iniciar os incêndios de forma deliberada \cite{Policia_prende_quarto_suspeito_de_participaca}. Tal aspecto lança luz sobre a essencialidade de apurações rigorosas e implementações de medidas preventivas, pois além das perdas econômicas, os incêndios provocam irreparáveis danos ao meio ambiente e às comunidades, reforçando a necessidade de uma abordagem multifacetada frente a essa crise.
+
+\subsection{Conclusão e Perspectivas Futuras}
+
+Os recentes incêndios no interior de São Paulo representam um desafio multidimensional, que exige respostas imediatas e estratégicas não só no campo da assistência financeira e jurídica aos afetados como na esfera da prevenção e da investigação criminal. A magnitude dos prejuízos econômicos e ambientais chama a atenção para a urgência de se reavaliar políticas públicas e reforçar as ações contra a ocorrência desses sinistros, com um olhar atento à possibilidade da ação criminosa como fator desencadeador. Diante desse cenário, a sociedade e os órgãos responsáveis são convocados a uma ação conjunta na busca de soluções efetivas para a mitigação dessas catástrofes e para a promoção de um desenvolvimento mais seguro e sustentável.
+\section{Impactos das Queimadas no Interior de São Paulo}
+O interior do estado de São Paulo tem sido palco de um aumento significativo no número de focos de incêndio, trazendo consigo uma série de sérios prejuízos para as mais diversas cadeias produtivas da região, em especial, para a agropecuária. Áreas próximas a Ribeirão Preto, um importante polo agroindustrial do estado, foram particularmente afetadas, culminando em perdas financeiras substanciais para os produtores locais. De acordo com estimativas, os danos causados pelos incêndios nas regiões impactadas giram em torno de aproximadamente 1 bilhão de reais \cite{Queimadas_em_SP_causaram_prejuizo_de_R_1_bi_a}.
+
+\subsection{Setores Afetados Pelas Queimadas}
+Entre os segmentos mais atingidos pelas queimadas, destacam-se a bovinocultura, a produção de cana-de-açúcar, a fruticultura, a heveicultura e a apicultura. Estes setores experimentaram impactos diretos decorrentes da perda da produção, além de danos estruturais que comprometeram a continuidade das operações produtivas. Ao reconhecer a magnitude dos prejuízos, a Secretaria de Agricultura e Abastecimento do estado de São Paulo agiu prontamente, implementando um pacote de ajuda emergencial aos produtores rurais afetados. Tal pacote inclui a disponibilização de recursos financeiros emergenciais, suporte jurídico e a destinação de R\$ 110 milhões especificamente para financiar iniciativas voltadas à mitigação dos prejuízos financeiros, bem como custear as despesas necessárias para a recuperação das áreas atingidas \cite{Semana_de_queimadas_teve_saltos_de_338_em_SP_}.
+
+\subsection{Ações Contra os Incêndios}
+A resposta às queimadas não se limitou apenas ao suporte financeiro e estrutural. Houve também uma atuação enfática por parte das forças de segurança, que resultou na prisão de quatro indivíduos suspeitos de estarem envolvidos na iniciação dos incêndios. Suspeita-se que parte significativa destes incêndios tenha sido provocada intencionalmente, uma hipótese que tem levado empresas do setor a oferecer recompensas por informações que possam levar à identificação e à prisão de outros envolvidos \cite{Policia_prende_quarto_suspeito_de_participaca}. A preocupação com a possibilidade de incêndios criminosos não é recente entre os produtores e associações do agronegócio da região. Há um apelo constante por mais ações efetivas por parte das autoridades para investigar e deter tais atividades, evidenciando a necessidade de um esforço conjunto entre o setor agropecuário, a sociedade e o poder público no combate a essas ocorrências \cite{Conheca_a_cidade_de_17_mil_habitantes_que_lid}.
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section{Impactos e Respostas aos Incêndios no Estado de São Paulo}
+A série de incêndios que recentemente atingiu diversas regiões do estado de São Paulo trouxe à tona graves consequências para o setor agropecuário, com prejuízos significativos que atingem marcas expressivas em termos financeiros e sociais. Este cenário desafiador exige análise e ação coordenada entre diversos atores do setor agrícola, autoridades policiais, e instituições de apoio ao produtor rural. As perdas, segundo avaliações da Secretaria de Agricultura e Abastecimento do estado, são estimadas em aproximadamente R\$ 1 bilhão, impactando diretamente 3.837 propriedades distribuídas por 144 municípios \cite{Queimadas_em_SP_causaram_prejuizo_de_R_1_bi_a}. A abrangência do desastre afetou setores diversificados da agricultura, incluindo bovinocultura, produção de cana-de-açúcar, fruticultura, heveicultura e apicultura.
+
+\subsection{Medidas Governamentais de Apoio}
+Diante dos prejuízos expressivos e da urgência em oferecer suporte às áreas afetadas, o governo estadual prontamente anunciou um pacote de ajuda significativo. Foram destinados R\$ 100 milhões ao seguro rural, além de um adicional de R\$ 10 milhões para despesas com manutenção e recuperação da produção através do Feap \cite{Semana_de_queimadas_teve_saltos_de_338_em_SP_;}. Esta iniciativa se soma às medidas de enquadramento das propriedades atingidas em programas habitacionais específicos para a recuperação de moradias, demonstrando uma abordagem multidimensional na assistência aos produtores rurais.
+
+\subsection{Ações Legais e Investigativas}
+A comunidade agrícola está fortemente inclinada à teoria de que os incêndios foram resultado de atos de sabotagem, possivelmente coordenados. Esta perspectiva é corroborada por uma estimativa de prejuízos no setor de cana-de-açúcar que alcança R\$ 350 milhões, conforme apontado pela Orplana \cite{Conheca_a_cidade_de_17_mil_habitantes_que_lid}. Respaldando esta visão, diversas empresas do setor manifestaram preocupação quanto à natureza criminosa dos incêndios, promovendo, inclusive, recompensas por informações que possam levar à identificação dos culpados. A rápida resposta das autoridades policiais resultou na prisão de quatro suspeitos, reforçando a seriedade com que o caso vem sendo tratado \cite{Policia_prende_quarto_suspeito_de_participaca}. Além disso, a Associação Brasileira dos Produtores de Cana-de-açúcar (Abag-RP) enfatizou a necessidade contínua de investigação sobre incêndios criminosos, apontando solicitações prévias feitas à Secretaria de Segurança do Estado para o encaminhamento e rigor na investigação desses casos \cite{Semana_de_queimadas_teve_saltos_de_338_em_SP_;}.
+
+\section{Conclusão}
+O conjunto de medidas anunciadas e em processo de implementação apresenta um cenário de tentativa de resposta rápida e eficiente para mitigar os efeitos devastadores dos incêndios no estado de São Paulo. Desde o suporte financeiro direto aos produtores rurais afetados até o empenho nas investigações que visam identificar e punir os responsáveis pelos atos, é evidente a mobilização de uma rede ampla de atuação que inclui esferas governamentais, autoridades policiais, e associações representativas do setor agrícola. A situação reforça a necessidade de políticas preventivas mais robustas e de um sistema de resposta mais ágil e eficaz para lidar com emergências agrícolas de grandes proporções.
+
+\bibliographystyle{unsrt}
+\bibliography{references}
+\end{document}
+O estado de São Paulo tem enfrentado uma série de desafios exacerbados por múltiplas queimadas, as quais não somente geram prejuízos econômicos significativos mas também levantam debates fervorosos sobre suas causas e consequências. Diante deste cenário, surge a necessidade de uma análise detalhada sobre as polarizações e tensões dialéticas que giram em torno destes incêndios, os quais têm desencadeado uma cadeia complexa de eventos impactando diversos setores da sociedade.
+
+\section{Impactos Econômicos e Ambientais das Queimadas}
+
+Os incêndios que assolaram o estado de São Paulo têm levado a inúmeros problemas, desde o bloqueio de estradas até prejuízos consideráveis na agricultura. Conforme relatado pela imprensa, os danos econômicos causados pelas queimadas foram avaliados em valores assustadores, destacando-se o impacto na qualidade do ar como uma preocupação ambiental iminente \cite{Queimadas_em_SP_causaram_prejuizo_de_R_1_bi_a}. A dimensão econômica destas queimadas revela um prejuízo que transcende a esfera local, afetando a produtividade agrícola e a infraestrutura do estado, comprometendo, assim, a sustentabilidade econômica de diversos setores.
+
+\subsection{Evidências de Incêndios Criminosos}
+
+Paralelamente aos debates sobre as consequências das queimadas, evidências sugerem a possibilidade de muitos destes incêndios terem sido iniciados de forma criminosa. Esta suspeita é reforçada pela prisão de indivíduos supostamente envolvidos, indicando uma ação coordenada que agrava ainda mais a situação já difíceis causada pelas condições climáticas \cite{Policia_prende_quarto_suspeito_de_participaca}. Este contexto traz à tona uma análise mais profunda sobre a segurança pública e a necessidade de investigações meticulosas para identificar os responsáveis e entender as motivações por trás de tais atos.
+
+\section{Medidas Governamentais e Resposta da Sociedade}
+
+Diante do caos instaurado pelas queimadas, o governo estadual anunciou pacotes de ajuda emergencial, visando não apenas a reparação dos danos mas também a prevenção de futuros incidentes. Este investimento estatal reflete a urgência em se abordar a questão das queimadas com seriedade e eficiência, buscando minimizar os impactos negativos sobre a população e o meio ambiente.
+
+\subsection{Debate Público e Conscientização}
+
+A situação das queimadas em São Paulo gerou um debate público significativo, evidenciando uma polarização de interesses entre autoridades governamentais, o setor produtivo e os grupos preocupados com as consequências ambientais \cite{Conheca_a_cidade_de_17_mil_habitantes_que_lid,Semana_de_queimadas_teve_saltos_de_338_em_SP_;}. Estas tensões dialéticas refletem a complexidade em se equilibrar medidas imediatas de combate aos incêndios com ações a longo prazo focadas na prevenção e na sustentabilidade ambiental. Além disso, destaca-se a importância da conscientização sobre como estas queimadas afetam não somente a economia local, mas também a qualidade de vida e o bem-estar geral da população.
+
+A situação em São Paulo, portanto, lança luz sobre o vasto espectro de desafios que emergem de crises ambientais, exigindo uma discussão abrangente e multidisciplinar que envolva todos os setores da sociedade. O diálogo construtivo e as ações colaborativas se mostram essenciais para se desenvolver estratégias eficazes que visem tanto o bem-estar da população quanto a preservação dos recursos naturais, destacando a necessidade premente de se encontrar um equilíbrio sustentável entre desenvolvimento econômico, segurança pública e proteção ambiental.
+\section{Impacto das Queimadas no Interior de São Paulo}
+
+As queimadas no interior de São Paulo representaram um desafio significativo para a região, provocando prejuízos notáveis no setor da agropecuária. Este fenômeno não somente afetou a biodiversidade local mas também impôs sérias dificuldades econômicas para os agricultores e pecuaristas. Fatores como a fruticultura, bovinocultura, produção de cana-de-açúcar e apicultura estiveram entre os mais atingidos, evidenciando a amplitude do impacto destas queimadas \cite{Queimadas_em_SP_causaram_prejuizo_de_R_1_bi_a}. A Secretaria de Agricultura e Abastecimento do estado estimou o prejuízo em torno de R\$ 1 bilhão, o que ilustra a gravidade da situação. É importante notar que tal catástrofe ambiental não apenas desestrutura a economia local, mas também afeta a vida de milhares de produtores rurais e suas propriedades.
+
+\subsection{Resposta às Queimadas}
+
+O governo do Estado de São Paulo tomou medidas imediatas frente aos danos causados pelas queimadas. Um pacote de ajuda financeira foi lançado, objetivando minimizar o impacto sobre os produtores afetados. Dentre as medidas, destacam-se os recursos emergenciais do Fundo de Expansão do Agronegócio Paulista, que ofereceu até R\$ 50 mil para despesas emergenciais \cite{Queimadas_em_SP_causaram_prejuizo_de_R_1_bi_a}. Esta iniciativa sublinha a importância de prover suporte financeiro e jurídico aos agricultores e pecuaristas que foram duramente atingidos por este desastre.
+
+\subsection{Combate aos Incêndios}
+
+A resposta ao desafio das queimadas abrangeu não só medidas de apoio financeiro mas também ações estratégicas para combater a causa do problema. A polícia do estado conseguiu deter quatro indivíduos suspeitos de estarem envolvidos na iniciação dos incêndios, mostrando a resposta das autoridades frente ao problema \cite{Policia_prende_quarto_suspeito_de_participaca}. Além disso, a comunidade agrícola, por meio da Associação Brasileira do Agronegócio da Região de Ribeirão Preto, enfatizou a necessidade de investigations mais eficazes sobre os incêndios criminosos, sugerindo uma abordagem mais rigorosa e sistemática para combater este tipo de crime \cite{Conheca_a_cidade_de_17_mil_habitantes_que_lid}.
+
+\subsection{Consequências das Queimadas}
+
+As implicações das queimadas transcenderam os limites econômicos e ambientais, afetando significativamente a infraestrutura da região. Estradas foram bloqueadas, e a visibilidade reduzida impactou as condições de voo, além de gerar uma densa névoa de fumaça que se espalhou por diversas regiões do país \cite{Semana_de_queimadas_teve_saltos_de_338_em_SP_}. Este cenário ressaltou não apenas a vulnerabilidade das comunidades locais a desastres ambientais dessa magnitude, mas também a interconexão entre diferentes setores, desde a logística de transporte até a saúde pública, todos sensivelmente afetados pelo incidente.
+
+\section{Conclusão}
+
+A série de queimadas que atingiu o interior de São Paulo desencadeou uma crise em múltiplas frentes, desde prejuízos bilionários no setor agropecuário a desdobramentos significativos na infraestrutura e logística regional. A resposta do governo estadual, juntamente com o esforço policial e o apoio da comunidade agrícola, destaca a importância de uma ação concertada para enfrentar tal crise ambiental. Esta análise evidencia a necessidade de uma maior conscientização sobre a prevenção de incêndios, além de uma política mais efetiva e estratégica de combate a possíveis causas antrópicas desses desastres. Nesse contexto, é fundamental que estratégias de longo prazo sejam desenvolvidas e implementadas, visando mitigar os riscos e proteger tanto as zonas rurais quanto as urbanas de futuros incidentes dessa natureza.
+Inserindo os trechos temáticos e questionário apresentado nos moldes solicitados de \LaTeX, é possível organizar o conteúdo da seguinte forma:
+
+```
+\section{Incêndios e Queimadas em São Paulo}
+
+O tema central aborda a problemática em torno dos incêndios e das queimadas em São Paulo, focando na região de Ribeirão Preto e suas consequências socioeconômicas, ambientais e jurídicas. Analisa-se especificamente o município de Altinópolis, os efeitos nas áreas agropecuárias e as suspeitas de ações criminosas envolvidas.
+
+\subsection{Altinópolis: Um Caso de Estudo}
+
+Altinópolis, município situado na região de Ribeirão Preto, destaca-se pelos elevados focos de queimadas, impactando diretamente sua economia e meio ambiente. Este município, que possui 16.818 habitantes, tem no agronegócio, especialmente na produção de cana-de-açúcar e café, suas principais atividades econômicas\cite{Conheca_a_cidade_de_17_mil_habitantes_que_lid}. Estes setores são severamente afetados por tais desastres, acarretando prejuízos significativos e impondo desafios tanto para a gestão pública quanto para a sustentabilidade local.
+
+\subsection{Aumento dos Focos de Incêndio}
+
+Observou-se um aumento significativo nos registros de queimadas tanto em São Paulo quanto no Mato Grosso, com particular ênfase no ano de 2023 em comparação ao ano anterior\cite{Semana_de_queimadas_teve_saltos_de_338_em_SP_;}. Tais eventos não apenas prejudicam a visibilidade, levando ao cancelamento de voos, mas também influenciam outras regiões do Brasil, demonstrando a magnitude e a interconexão dos impactos ambientais.
+
+\subsection{Impactos Econômicos e Ações do Governo}
+
+O setor agropecuário paulista enfrentou um prejuízo estimado em R\$ 1 bilhão devido às queimadas, o que levou à implementação de medidas emergenciais pelo governo do estado\cite{Queimadas_em_SP_causaram_prejuizo_de_R_1_bi_a}. Estas medidas incluem a oferta de recursos emergenciais e a proteção jurídica para os produtores afetados, muitos dos quais acreditam na origem criminosa destes incêndios, reforçando as suspeitas de ações coordenadas contra o setor.
+
+\subsection{Suspeitas de Criminalidade}
+
+Empresas e entidades do setor agropecuário expressaram preocupação com a natureza potencialmente criminosa dos incêndios, levando a iniciativas de investigação e a propositura de recompensas por informações que possam elucidar tais atos\cite{Policia_prende_quarto_suspeito_de_participaca}. A complexidade deste cenário evidencia a necessidade de uma abordagem multifacetada para a resolução desta problemática, envolvendo a cooperação entre setor público, privado e comunidade.
+
+\subsection{Questionário}
+
+\itemize{
+    \item Qual município na região de Ribeirão Preto é um dos campeões de focos de queimadas em São Paulo? \textbf{Altinópolis}
+    \item Qual é a cultura principal em Altinópolis, que responde por 59\% da área plantada? \textbf{Cana-de-açúcar}
+    \item Como a situação dos incêndios afetou Ribeirão Preto? \textbf{Cancelamento de voos e impactos na visibilidade.}
+    \item Quanto foi o prejuízo inicial projetado na agropecuária paulista devido às queimadas? \textbf{R\$ 1 bilhão}
+    \item Qual medida de auxílio o governo paulista disponibilizou para os produtores afetados? \textbf{Recursos emergenciais e proteção jurídica.}
+    \item O que os produtores acreditam sobre a origem dos incêndios? \textbf{Provocados por ação humana de forma criminosa.}
+    \item Como as empresas do setor agrícola reagiram aos incêndios? \textbf{Acreditam que os incêndios são de natureza criminosa.}
+    \item Quanto foi a recompensa oferecida pela empresa Grupo Moreno por informações de incêndios criminosos? \textbf{R\$ 100 mil}
+    \item Qual é a porcentagem da área plantada que a cana-de-açúcar representava em 2022 em Altinópolis? \textbf{59\%}
+}
+```
+\postextual
+\bibliography{queimadas_2024}
+\end{document}

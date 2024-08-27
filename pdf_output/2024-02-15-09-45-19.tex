@@ -1,0 +1,91 @@
+\documentclass[
+   article,       
+   12pt,          
+   oneside,       
+   a4paper,       
+   english,       
+   brazil,        
+   sumario=tradicional
+   ]{abntex2}
+
+\usepackage{lmodern}       
+\usepackage[T1]{fontenc}   
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}   
+\usepackage{nomencl}       
+\usepackage{color}         
+\usepackage{graphicx}      
+\usepackage{microtype}     
+\usepackage{background}
+\usepackage{datetime}
+\usepackage{lipsum} 
+\usepackage[brazilian,hyperpageref]{backref}
+\usepackage[alf]{abntex2cite}
+
+\newdateformat{mydate}{\THEDAY\space de \monthname[\THEMONTH], \THEYEAR}
+
+\backgroundsetup{
+   scale=1,
+   angle=0,
+   opacity=1,
+   color=black,
+   contents={\begin{tikzpicture}[remember picture, overlay]
+      \node at ([xshift=-2cm,yshift=-2cm] current page.north east)
+            {\includegraphics[width = 3cm]{logo_02.png}}
+       node at ([xshift=2cm,yshift=-2cm] current page.north west)
+            {\includegraphics[width = 3cm]{conf.png}};
+     \end{tikzpicture}}
+}
+
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+\renewcommand{\backref}{}
+\renewcommand*{\backrefalt}[4]{
+   \ifcase #1
+      Nenhuma citação no texto.
+   \or
+      Citado na página #2.
+   \else
+      Citado #1 vezes nas páginas #2.
+   \fi}
+
+\titulo{Título não encontrado}
+\tituloestrangeiro{ }
+\autor{{Ephor - Linguística Computacional }}
+\local{{Maringá - Brasil \url{https://www.ephor.com.br/}}}
+\data{{\today\space \currenttime}}
+
+\definecolor{blue}{RGB}{41,5,195}
+\makeatletter
+\hypersetup{
+      pdftitle={\@title}, 
+      pdfauthor={\@author},
+      pdfsubject={Correntes da Antropologia},
+       pdfcreator={LaTeX with abnTeX2},
+      pdfkeywords={abnt}{latex}{abntex}{abntex2}{atigo científico}, 
+      colorlinks=true,   
+      linkcolor=blue,    
+      citecolor=blue,    
+      filecolor=magenta, 
+      urlcolor=blue,
+      bookmarksdepth=4
+}
+\makeatother
+\makeindex
+\setlrmarginsandblock{3cm}{3cm}{*}
+\setulmarginsandblock{3cm}{3cm}{*}
+\checkandfixthelayout
+\setlength{\parindent}{1.3cm}
+\setlength{\parskip}{0.2cm}
+\SingleSpacing
+
+\begin{document}
+
+\selectlanguage{brazil}
+\frenchspacing 
+\maketitle
+
+\textual
+\section{Aviso Importante}
+\textbf{Este documento foi gerado usando processamento de linguística computacional auxiliado por inteligência artificial.} Para tanto foram analisadas as seguintes fontes:  \cite{Ao_retomar_refinaria_Lula_justifica_calote_da}, \cite{Carlos_Madeiro_Lula_volta_a_refinaria_em_PE_q}, \cite{Lula_em_Pernambuco_nao_e_um_erro_Sao_varios__}, \cite{Para_manter_a_dependencia_externa_Globo_ataca}, \cite{Petrobras_anuncia_investimento_de_ate_R_8_bil}, \cite{Petrobras_PETR4_investimentos_em_refinaria_pi}.
+\textbf{Portanto este conteúdo requer revisão humana, pois pode conter erros.} Decisões jurídicas, de saúde, financeiras ou similares não devem ser tomadas com base somente neste documento. A Ephor - Linguística Computacional não se responsabiliza por decisões ou outros danos oriundos da tomada de decisão sem a consulta dos devidos especialistas.
+A consulta da originalidade deste conteúdo para fins de verificação de plágio pode ser feita em \href{http://www.ephor.com.br}{ephor.com.br}.

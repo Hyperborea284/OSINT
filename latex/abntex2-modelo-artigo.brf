@@ -1,0 +1,235 @@
+
+--boundary_.oOo._wdoh836mA3TzIKSeUMsPsA7XVXVqHHTg
+Content-Length: 41783
+Content-Type: application/octet-stream
+X-File-MD5: ec0564c2ad8a6baff64973d3562c223c
+X-File-Mtime: 1706448732
+X-File-Path: /Desktop/multi_generator/latex/abntex2-modelo-artigo.bib
+
+% This BibTeX bibliography file was created using BibDesk.% http://bibdesk.sourceforge.net/% Created for Lauro Cesar Araujo at 2015-04-27 19:43:45 -0300% Saved with string encoding Unicode (UTF-8)
+
+@book{ibge1993,
+	address = {Rio de Janeiro},
+	author = {{Instituto Brasileiro de Geografia e Estat{'\i}stica} (IBGE)},
+	edition = {3},
+	publisher = {Centro de Documenta{\c c}{~a}o e Dissemina{\c c}{~a}o de Informa{\c c}{~o}es},
+	title = {Normas de Apresenta{\c c}{~a}o Tabular},
+	year = {1993},
+	url = {http://biblioteca.ibge.gov.br/visualizacao/livros/liv23907.pdf},
+	organization = {IBGE},
+	urlaccessdate = {18 mar 2023}
+}
+
+@inbook{Interdisciplinar_casos,
+	author = {Vargas, Vera Maria Ferrão},
+	title = {Projetos em Ciências Ambientais: Relato de Casos},
+	booktitle = {Interdisciplinaridade em Ciências Ambientais},
+	editor = {{Philippi Júnior}, Arlindo and Tucci, Carlos E. Morelli and Hogan, Daniel Joseph and Navegantes, Raul},
+	chapter = {9},
+	pages = {12},
+	publisher = {Signus Editora},
+	location = {São Paulo},
+	institution = {ONU - PNUMA},
+	year = {2000},
+	url = {http://www.nuredam.com.br/files/divulgacao/philippi01.pdf}
+}
+
+@inbook{bardin_epistemologia,
+	author = {Gaspi, Suelen de and Maron, Luis Henrique Pupo and Magalhães Júnior, Carlos Alberto Oliveira de},
+	title = {Análise de conteúdo numa perspectiva de Bardin},
+	booktitle = {Metodologia da Pesquisa em Educação e Ensino de Ciências},
+	editor = {Magalhães Júnior, Carlos Alberto Oliveira de and Batista, Michel Corci},
+	publisher = {Massoni},
+	location = {Maringá - PR},
+	pages = {11},
+	year = {2021},
+	isbn = {978-65-87542-35-5},
+	url = {https://www.researchgate.net/profile/Carlos-Magalhaes-Junior/publication/358189924_Metodologia_da_Pesquisa_em_Educacao_e_Ensino_de_Ciencias/links/61f4261caad5781d41b6dd5e/Metodologia-da-Pesquisa-em-Educacao-e-Ensino-de-Ciencias.pdf?origin=publication_detail}
+}
+
+@inbook{modernas_Interdisciplinar,
+	author = {Luiz Fernando Soares de Assis},
+	booktitle = {Interdisciplinaridade em Ci{\^e}ncias Ambientais},
+	chapter = {10},
+	editor = {Arlindo {Philippi J{\'u}nior} and Carlos E. Morelli Tucci and Daniel Joseph Hogan and Raul Navegantes},
+	institution = {ONU - PNUMA},
+	location = {S{\~a}o Paulo},
+	pages = {14},
+	publisher = {Signus Editora},
+	title = {Interdisciplinaridade: Necessidade das Ci{\^e}ncias Modernas e Imperativo das Quest{\~o}es Ambientais},
+	url = {http://www.nuredam.com.br/files/divulgacao/philippi01.pdf},
+	year = {2000}
+}
+
+@mastersthesis{araujo2012,
+	author = {Araujo, Lauro César},
+	title = {Configuração: uma perspectiva de Arquitetura da Informação da Escola de Brasília},
+	subtitle = {},
+	school = {Universidade de Brasília},
+	address = {Brasília},
+	year = {2012},
+	month = {mar.}
+}
+
+@inbook{Interdisciplinaridade_Futura,
+	author = {Tucci, Carlos E. Morelli and Philippi Júnior, Arlindo and Hogan, Daniel Joseph and Navegantes, Raul},
+	title = {Uma Visão Atual e Futura da Interdisciplinaridade em C&T Ambiental},
+	booktitle = {Interdisciplinaridade em Ciências Ambientais},
+	editor = {Philippi Júnior, Arlindo and Tucci, Carlos E. Morelli and Hogan, Daniel Joseph and Navegantes, Raul},
+	chapter = {16},
+	pages = {11},
+	publisher = {Signus Editora},
+	address = {São Paulo},
+	year = {2000},
+	institution = {ONU - PNUMA},
+	url = {http://www.nuredam.com.br/files/divulgacao/philippi01.pdf}
+}
+
+@article{van86,
+	author = {{van Gigch}, John P. and Pipino, Leo L.},
+	title = {In search for a paradigm for the discipline of information systems},
+	journaltitle = {Future Computing Systems},
+	volume = {1},
+	number = {1},
+	pages = {71--97},
+	year = {1986}
+}
+
+@phdthesis{guizzardi2005,
+	address = {Enschede, The Netherlands},
+	author = {Guizzardi, Giancarlo},
+	school = {Universidade de Twente},
+	title = {Fundamentos Ontológicos para Modelos Conceituais Estruturais},
+	url = {http://www.loa.istc.cnr.it/Guizzardi/SELMAS-CR.pdf},
+	year = {2005}
+}
+
+@mastersthesis{macedo2005,
+	author = {Fl{\'a}via L. Macedo},
+	date-added = {2012-04-23 11:35:13 +0000},
+	date-modified = {2012-04-23 11:35:13 +0000},
+	keywords = {arquitetura da informa{\c c}{\~a}o},
+	school = {Universidade de Bras{\'\i}lia},
+	title = {Arquitetura da Informa{\c c}{\~a}o: aspectos espistemol{\'o}gicos, cient{\'\i}ficos e pr{\'a}ticos.},
+	type = {Disserta{\c c}{\~a}o de Mestrado},
+	year = {2005}
+}
+
+@article{Materials_for_hydrogen_storage,
+	author = {Andreas Z{\"u}ttel},
+	journal = {Materials Today},
+	month = sep,
+	number = {9},
+	pages = {33},
+	title = {Materials for hydrogen storage},
+	url = {https://doi.org/10.1016/S1369-7021(03)00922-2},
+	volume = {6},
+	year = {2003}
+}
+
+@booklet{Agenda_2030,
+	author = {United Nations},
+	organization = {United Nations},
+	pages = {41},
+	title = {Transforming our World: the 2030 Agenda for sustainable development},
+	url = {https://sdgs.un.org/sites/default/files/publications/21252030%20Agenda%20for%20Sustainable%20Development%20web.pdf},
+	year = {2015}
+}
+
+@book{Lincoln1985-ua,
+	address = {Thousand Oaks, CA},
+	author = {Yvonna S Lincoln and Egon G Guba},
+	language = {en},
+	month = jun,
+	publisher = {SAGE Publications},
+	title = {Naturalistic Inquiry},
+	year = 1985
+}
+
+@book{Kuhn2012-oa,
+	address = {Chicago, IL},
+	author = {Thomas S Kuhn},
+	edition = 50,
+	month = may,
+	publisher = {University of Chicago Press},
+	title = {The structure of scientific revolutions},
+	year = 2012
+}
+
+@article{DIALECTICAL_TECHNOLOGY,
+	author = {Natalia Juchniewicz},
+	institution = {Institute of Philosophy},
+	journal = {FILOZOFIA},
+	number = {10},
+	pages = {13},
+	school = {University of Warsaw, PL},
+	title = {DIALECTICAL TECHNOLOGY -- HEGEL ON MEANS, TOOLS AND THE MACHINE},
+	url = {https://www.academia.edu/38029596/DIALECTICAL_TECHNOLOGY_HEGEL_ON_MEANS_TOOLS_AND_THE_MACHINE},
+	volume = {73},
+	year = {2018}
+}
+
+@proceedings{OECD_IEA_2012,
+	author = {Sara Bryan Pasquier},
+	booktitle = {Insights series 2012},
+	institution = {International Energy Agency},
+	location = {9 rue de la F{\'e}d{\'e}ration Switzerland 75739 Paris Cedex 15 France},
+	pages = {24},
+	publisher = {OECD/IEA},
+	title = {Energy Efficiency Policy Developments},
+	url = {https://www.oecd-ilibrary.org/docserver/5k3wb8f2dr36-en.pdf?expires=1645614162&id=id&accname=guest&checksum=DCFD9D21AE06347A8F5F3788BEC11727},
+	year = {2012}
+}
+
+@phdthesis{Servicos_Ancilares,
+	author = {Juan Carlos Galvis Manso},
+	location = {Ilha Solteira - SP},
+	month = apr,
+	pages = {171},
+	title = {Valoriza{\c c}{\~a}o de Servi{\c c}os Ancilares de Reserva em Geradores Hidrel{\'e}tricos},
+	url = {https://www.feis.unesp.br/Home/departamentos/engenhariaeletrica/pos-graduacao/064-tese_juan_carlos_galvis.pdf},
+	year = {2010}
+}
+
+@article{Energetic_evaluation,
+	author = {Karsten M{\"u}ller and Patrick Adametz},
+	journal = {International Journal of Energy Research},
+	month = may,
+	number = {13},
+	pages = {31},
+	title = {Energetic evaluation of hydrogen storage in metal hydrides},
+	url = {https://doi.org/10.1002/er.3563},
+	volume = {40},
+	year = {2016}
+}
+
+@article{Developments_hydrogen,
+	author = {Marcus Newborough and Graham Cooley},
+	booktitle = {Fuel Cells Bulletin},
+	journal = {Fuel Cells Bulletin},
+	month = nov,
+	number = {11},
+	title = {Developments in the global hydrogen market: The spectrum of hydrogen colours},
+	url = {https://www.magonlinelibrary.com/doi/epub/10.1016/S1464-2859%2820%2930546-0},
+	year = {2020}
+}
+
+@article{hydrogen_markets,
+	author = {Charles W. Forsberg},
+	booktitle = {International Journal of Hydrogen Energy},
+	journal = {International Journal of Hydrogen Energy},
+	month = mar,
+	number = {4},
+	pages = {8},
+	title = {Future hydrogen markets for large-scale hydrogen production systems},
+	volume = {32},
+	year = {2007}
+}
+
+@article{Comparison_hydrogen_hydrates,
+	author = {PietroDi Profio and Simone Arca and Federico Rossi and Mirko Filipponi},
+	booktitle = {International Journal of Hydrogen Energy},
+	journal = {International Journal of Hydrogen Energy},
+	month = nov,
+	number = {22},
+	pages = {

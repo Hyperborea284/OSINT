@@ -1,0 +1,73 @@
+saída maltego e timeline
+
+identificar mais entidades pessoas locais e sentimentos
+
+criar associações entre os dados das diferentes colunas
+
+inserir no site django
+
+
+
+
+Para tanto, um novo fluxo de trabalho:
+
+gerar uma segunda função de sumarização similar ativado em 
+
+tex_generator.py , a qual conterá todas as operações envolvendo latex
+
+
+refinar os campos percebidos pelo llamas; 
+
+o llamas somente descreve o db, aparenta ser bem 
+superficial na descrição dos conteúdos.
+
+Fundir com as funcionalidades do site django
+
+entities e sentiments.R
+
+as quais pode ser ativadas por
+
+relato ; contexto ; contradicoes -> sentiments.R
+
+entidades -> entities -> maltego_generator.py(ainda não existe) -> linha_tempo -> timeline_generator.py (ainda não existe)
+
+
+contexto -> Deve ser altarado para conter
+a discussão da espacialidade;
+
+o texto presente deve ir 
+para o prompt relato
+
+Inserir prompt/tabela espaços; questionando os locais
+o qual ativará um gerador de mapas
+map_generator.py (ainda não existe)
+
+gerando conteúdos à serem inseridos numa estrutura
+
+processed_messages.append({"role": "user", "content": str(texto).strip()})
+
+a qual reforçará o contexto do prompt
+
+
+quais desafios sociais são mencionados nestes textos?
+
+quais indivíduos são mencionados nos textos da coluna cleaned_text?
+
+quais localidades são mencionados nestes textos?
+
+quais empresas são mencionados nestes textos?
+
+
+
+
+https://www.metropoles.com/brasil/no-stf-dino-diz-que-so-ha-poder-civil-e-funcao-militar-e-subalterna
+
+https://www.cnnbrasil.com.br/politica/dino-diz-que-funcao-militar-e-subalterna-em-julgamento-sobre-limites-das-forcas-armadas/
+
+https://noticias.r7.com/brasilia/stf-tem-3x0-para-impedir-poder-moderador-das-forcas-armadas-e-intervencao-militar-31032024
+
+https://diariodonordeste.verdesmares.com.br/pontopoder/stf-forma-placar-de-3-a-0-em-julgamento-que-nega-possibilidade-de-intervencao-militar-constitucional-1.3495452
+
+
+
+

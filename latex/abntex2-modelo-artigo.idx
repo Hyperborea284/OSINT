@@ -1,0 +1,216 @@
+
+--boundary_.oOo._q02P5vjStiIOhWor1X5wzDP2KeQIPxl4
+Content-Length: 22263
+Content-Type: application/octet-stream
+If-Match: "f66353be762ace5bee25ba2aea3445e5"
+X-File-MD5: bd149c2d041da77adf39cc10a18777b1
+X-File-Mtime: 1706590361
+X-File-Path: /Desktop/multi_generator/main.py
+
+import sqlite3
+import re
+import os
+import sys
+import json
+from goose3 import Goose
+from datetime import datetime
+import subprocess
+import requests
+from summarize import Summarizer
+
+
+class Main:
+    def __init__(self, nome_banco='database.db'):
+        self.nome_banco = nome_banco
+        global caminho_banco
+        self.caminho_banco = os.path.join('databases', nome_banco)
+        self.conexao = None
+        self.cursor = None
+        self.goose = Goose()
+        self.numero_links = 0
+        self.verificar_tabelas()
+
+    def limpar_tela(self):
+        os.system('clear')
+
+    def exibir_logo(self):
+        data = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        logo = f'''
+        ╔══════════════════════════════════════════════════╗
+        ║                                                  ║
+        ║      Bem-vindo ao Registrador de Links!          ║
+        ║                                                  ║
+        ║   Este programa registra e analisa informações   ║
+        ║   de links, armazenando dados como autores,      ║
+        ║   texto limpo, URL final, meta descrição e mais. ║
+        ║                                                  ║
+        ║   Funções Principais:                            ║
+        ║   - Registro de Links                            ║
+        ║   - Análise e Armazenamento de Dados             ║
+        ║   - Exibição de Informações Registradas          ║
+        ║                                                  ║
+        ║   Data e Hora: {data}               ║
+        ║                                                  ║
+        ╚══════════════════════════════════════════════════╝
+        '''
+        print(logo)
+        print(f'\n\n')
+
+    def diagrama_legivel(self, link):
+        self.conectar()
+        self.cursor.execute('''
+            SELECT * FROM links WHERE analised_link = ?
+        ''', (link,))
+        link_data = self.cursor.fetchone()
+        self.desconectar()
+
+        if link_data:
+            diagrama = f'''
+            Dados registrados para o link: {link} \n\n
+            plataform: {link_data[0]}  \n\n
+            Link Analisado: {link_data[1]}  \n\n
+            Authors: {link_data[2]}  \n\n
+            Cleaned Text: {link_data[3]}  \n\n
+            Domain: {link_data[4]}  \n\n
+            Final URL: {link_data[5]}  \n\n
+            Link Hash: {link_data[6]}  \n\n
+            Extracted Links: {link_data[7]}  \n\n
+            Meta Description: {link_data[8]}  \n\n
+            Meta Encoding: {link_data[9]}  \n\n
+            Meta Lang: {link_data[10]}  \n\n
+            Publish Date: {link_data[11]}  \n\n
+            Title: {link_data[12]}  \n\n
+            Tags: {link_data[13]}  \n\n
+            Schema: {link_data[14]}  \n\n
+            Opengraph: {link_data[15]}  \n\n
+            Extracted Infos: {link_data[16]}  \n\n
+            '''
+            return diagrama
+        else:
+            return print(f'\n"Nenhum dado encontrado para o link fornecido, no contexto do banco de dados."\n')
+
+
+    def extrair_info(self, link):
+        article = self.goose.extract(link)
+        return article
+
+    def criar_banco_e_tabela(self):
+        self.cursor.execute('''
+            CREATE TABLE IF NOT EXISTS links (
+                plataform TEXT,
+                analised_link TEXT,
+                authors TEXT,
+                cleaned_text TEXT,
+                domain TEXT,
+                final_url TEXT,
+                extracted_links TEXT,
+                meta_description TEXT,
+                meta_encoding TEXT,
+                meta_lang TEXT,
+                publish_date TEXT,
+                title TEXT,
+                tags TEXT,
+                schema TEXT,
+                opengraph TEXT,
+                extracted_infos TEXT,
+                data_registro TEXT,
+                top_node_raw_html TEXT
+            )
+        ''')
+        self.conexao.commit()
+
+    def escolher_ou_criar_banco(self):
+        bancos_existentes = [file for file in os.listdir('databases') if file.endswith('.db')]
+        
+        if bancos_existentes:
+            print(f'\n"Bancos de dados existentes: "\n')
+            print()
+            for i, banco in enumerate(bancos_existentes):
+                print(f" {i+1}. {banco}")
+                            
+            resposta = input(f'\n"Deseja usar um banco de dados existente? (S/N): "\n')
+    
+            if resposta.lower() == 's':
+                try:
+                    indice_banco = int(input(f'\n"Digite o número do banco de dados desejado: "\n'))
+                    if 1 <= indice_banco <= len(bancos_existentes):
+                        nome_banco = bancos_existentes[indice_banco - 1]
+                    else:
+                        print(f'\n"Erro: Índice inválido. Criando um novo banco."\n')
+                        nome_banco = input(f'\n"Digite o nome para o novo banco de dados: "\n')
+                except ValueError:
+                    print(f'\n"Erro: Entrada inválida. Criando um novo banco."\n')
+                    nome_banco = input(f'\n"Digite o nome para o novo banco de dados: "\n')
+            else:
+                nome_banco = input(f'\n"Digite o nome para o novo banco de dados: "\n')
+        else:
+            nome_banco = input(f'\n"Digite o nome para o novo banco de dados: "\n')
+
+        self.atualizar_banco(nome_banco)
+        self.verificar_tabelas()
+
+    def atualizar_banco(self, novo_nome):
+        self.nome_banco = novo_nome
+        self.caminho_banco = os.path.join('databases', novo_nome)
+        print(f'\n"Banco de dados atualizado para {self.caminho_banco}."\n')
+        self.conectar()
+
+    def criar_tabela_hash_tab(self):
+        self.cursor.execute('''
+            CREATE TABLE IF NOT EXISTS hash_tab (
+                hashes TEXT,
+                resume TEXT
+            )
+        ''')
+        self.conexao.commit()
+
+    def criar_tabela_metaresumo(self):
+        self.cursor.execute('''
+            CREATE TABLE IF NOT EXISTS metaresumo (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                data TEXT,
+                aggregate_links TEXT,
+                resume TEXT
+            )
+        ''')
+        self.conexao.commit()
+
+    def verificar_tabelas(self):
+        tabelas_verificar = ["links", "metaresumo", "hash_tab"]
+
+        self.conectar()
+        
+        for tabela in tabelas_verificar:
+            self.cursor.execute(f"SELECT name FROM sqlite_master WHERE type='table' AND name='{tabela}'")
+            tabela_existe = self.cursor.fetchone() is not None
+
+            if tabela == "links" and not tabela_existe:
+                self.criar_banco_e_tabela()
+            elif tabela == "metaresumo" and not tabela_existe:
+                self.criar_tabela_metaresumo()
+            elif tabela == "hash_tab" and not tabela_existe:
+                self.criar_tabela_hash_tab()
+
+        self.desconectar()
+
+    def conectar(self):
+        if not os.path.exists(self.caminho_banco):
+            self.conexao = sqlite3.connect(self.caminho_banco)
+            self.cursor = self.conexao.cursor()
+            self.criar_banco_e_tabela()
+        else:
+            self.conexao = sqlite3.connect(self.caminho_banco)
+            self.cursor = self.conexao.cursor()
+
+    def desconectar(self):
+        if self.conexao:
+            self.cursor.close()
+            self.conexao.commit()
+            self.conexao.close()
+            self.conexao = None 
+
+    def receber_links_usuario(self):
+        self.numero_links = int(input(f'\n"Quantos links deseja registrar? "\n'))
+        self.conectar()
+        for _ in range(self.numero_links):
+            link = input(f'\n"Digite o link que deseja registrar

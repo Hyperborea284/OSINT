@@ -1,0 +1,116 @@
+\documentclass[
+   article,       
+   12pt,          
+   oneside,       
+   a4paper,       
+   english,       
+   brazil,        
+   sumario=tradicional
+   ]{abntex2}
+
+\usepackage{lmodern}       
+\usepackage[T1]{fontenc}   
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}   
+\usepackage{nomencl}       
+\usepackage{color}         
+\usepackage{graphicx}      
+\usepackage{microtype}     
+\usepackage{background}
+\usepackage{datetime}
+\usepackage{lipsum} 
+\usepackage[brazilian,hyperpageref]{backref}
+\usepackage[alf]{abntex2cite}
+
+\newdateformat{mydate}{\THEDAY\space de \monthname[\THEMONTH], \THEYEAR}
+
+\backgroundsetup{
+   scale=1,
+   angle=0,
+   opacity=1,
+   color=black,
+   contents={\begin{tikzpicture}[remember picture, overlay]
+      \node at ([xshift=-2cm,yshift=-2cm] current page.north east)
+            {\includegraphics[width = 3cm]{logo_02.png}}
+       node at ([xshift=2cm,yshift=-2cm] current page.north west)
+            {\includegraphics[width = 3cm]{conf.png}};
+     \end{tikzpicture}}
+}
+
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+\renewcommand{\backref}{}
+\renewcommand*{\backrefalt}[4]{
+   \ifcase #1
+      Nenhuma citação no texto.
+   \or
+      Citado na página #2.
+   \else
+      Citado #1 vezes nas páginas #2.
+   \fi}
+
+\titulo{A Visão de Lula sobre a Operação Lava Jato e a Petrobras na Geopolítica de Petróleo}
+\tituloestrangeiro{ }
+\autor{{Ephor - Linguística Computacional }}
+\local{{Maringá - Brasil \url{https://www.ephor.com.br/}}}
+\data{{\today\space \currenttime}}
+
+\definecolor{blue}{RGB}{41,5,195}
+\makeatletter
+\hypersetup{
+      pdftitle={\@title}, 
+      pdfauthor={\@author},
+      pdfsubject={Correntes da Antropologia},
+       pdfcreator={LaTeX with abnTeX2},
+      pdfkeywords={abnt}{latex}{abntex}{abntex2}{atigo científico}, 
+      colorlinks=true,   
+      linkcolor=blue,    
+      citecolor=blue,    
+      filecolor=magenta, 
+      urlcolor=blue,
+      bookmarksdepth=4
+}
+\makeatother
+\makeindex
+\setlrmarginsandblock{3cm}{3cm}{*}
+\setulmarginsandblock{3cm}{3cm}{*}
+\checkandfixthelayout
+\setlength{\parindent}{1.3cm}
+\setlength{\parskip}{0.2cm}
+\SingleSpacing
+
+\begin{document}
+
+\selectlanguage{brazil}
+\frenchspacing 
+\maketitle
+
+\textual
+\section{Aviso Importante}
+\textbf{Este documento foi gerado usando processamento de linguística computacional auxiliado por inteligência artificial.} Para tanto foram analisadas as seguintes fontes:  \cite{Ao_retomar_refinaria_Lula_justifica_calote_da}, \cite{Carlos_Madeiro_Lula_volta_a_refinaria_em_PE_q}, \cite{Lula_em_Pernambuco_nao_e_um_erro_Sao_varios__}, \cite{Para_manter_a_dependencia_externa_Globo_ataca}, \cite{Petrobras_anuncia_investimento_de_ate_R_8_bil}, \cite{Petrobras_PETR4_investimentos_em_refinaria_pi}.
+\textbf{Portanto este conteúdo requer revisão humana, pois pode conter erros.} Decisões jurídicas, de saúde, financeiras ou similares não devem ser tomadas com base somente neste documento. A Ephor - Linguística Computacional não se responsabiliza por decisões ou outros danos oriundos da tomada de decisão sem a consulta dos devidos especialistas.
+A consulta da originalidade deste conteúdo para fins de verificação de plágio pode ser feita em \href{http://www.ephor.com.br}{ephor.com.br}.
+\section{Introdução}Este relatório fornece um resumo detalhado das declarações recentes do ex-presidente Luiz Inácio Lula da Silva em relação à Petrobras e à controversa Operação Lava Jato. O foco principal está na postura de Lula em relação ao papel da Petrobras na economia nacional do Brasil e na geopolítica internacional do petróleo, e como essas perspectivas se relacionam com a corrupção sistêmica exposta pela Operação Lava Jato.
+\section{Argumentos}
+A Petrobras (PETR4) deu mais um passo rumo à consolidação de seu plano de investimento para os próximos 4 anos. Na última quinta-feira (18), em um evento realizado na cidade de Ipojuca (PE), a estatal anunciou o aporte de cerca de R\$ 8 bilhões na refinaria de Abreu e Lima.Inaugurada em 2014, a refinaria é considerada a mais moderna da Petrobras. Mas o que de fato marcou a história de Abreu e Lima foi a Operação Lava Jato.Em 2021 a refinaria se tornou alvo de investigação por suspeita de prejuízos à petroleira. Assim, diante da decisão do governo de voltar a injetar dinheiro na Abreu e Lima, as ações da companhia fecharam a última semana em queda.Agora a dúvida que fica é: será que a Petrobras (PETR4) corre o risco de voltar a um cenário de resultados negativos e endividamento elevado ou se trata-se apenas de uma mudança estratégica?Em entrevista ao Giro do Mercado, o analista da Empiricus Research, Ruy Hungria apontou que existem razões plausíveis para essa decisão da estatal.Mas ele também fez o seguinte alerta: “para quem se acostumou com a Petrobras pagando yields de quase 50\% nos últimos anos, a expectativa para os próximos anos é muito menor.”A seguir explico o que está em jogo para a petroleira estatal neste momento e qual a recomendação dos analistas da casa.Ruy Hungria destacou que não é nenhuma novidade a Petrobras (PETR4) estar aumentando os investimentos em refino. Afinal, a estatal já havia manifestado esta intenção no seu plano estratégico.Contudo, a escolha da refinaria de Abreu e Lima (RNEST) chama atenção justamente pelo fato de ter sido um dos principais ativos envolvidos nos esquemas de corrupção investigados pela Lava Jato.Assim, os novos investimentos na refinaria podem trazer alguns fantasmas do passado, especialmente para quem investia na companhia quando o caso veio à tona.Mas apesar desse sentimento negativo, o analista destaca que a decisão pode ser uma mudança estratégica da companhia. Na opinião de Ruy, investir em refino pode significar para o governo maior independência de importação.Além disso, ao aumentar a capacidade de refino, a Petrobras teria uma margem de segurança maior em casos de disparada dos preços do petróleo.Sem depender tanto da importação, o governo conseguiria produzir combustível durante algum tempo, evitando o repasse aos consumidores. “A gente sabe como o preço dos combustíveis é impactante para os governos em termos de popularidade”, ressalta o analista.A conta pode ficar ‘cara’ para os acionistasPensando em uma maior independência das importações, a decisão da Petrobras não parece ser tão ruim assim.Contudo, do ponto de vista dos acionistas, essa estratégia pode ter impactos negativos para a estatal, afirma o analistaRuy explica que o segmento de refino tem margens bastante apertadas. Ou seja, o investimento é alto e o retorno não costuma ser proporcional à magnitude do investimento.Além disso, a atividade de refino tem uma dificuldade operacional maior e exige uma eficiência operacional grande, “algo que não combina com a palavra ‘estatal’”, comenta Hungria.Ele aponta que, em geral, as empresas sob gestão do governo tendem a ser mais engessadas e sem a agilidade de uma companhia privada, características necessárias para tocar a atividade de refino de forma eficiente.Por esse motivo, o analista acredita que investir em refino não é a melhor estratégia para a companhia, pois tende a trazer menor retorno. Com isso, os acionistas serão impactados, especialmente na distribuição de dividendos.Além das questões relacionadas às novas estratégias de investimentos, o analista aponta que há outros motivos para não investir na Petrobras (PETR4) neste momento.Ele destacou que nos últimos tempos já houve uma reprecificação dos múltiplos da companhia. Ou seja, o preço atual da ação está muito próximo do que seria considerado justo, deixando pouco espaço para grandes valorizações.Da mesma forma, a companhia já não paga “dividendos colossais” como nos anos anteriores. E na visão do analista, a tendência é que o dividend yield da companhia caia mais nos próximos anos.Por esse motivo, a Petrobras (PETR4) não está entre as recomendações da casa. Neste momento, os analistas da Empiricus Research acreditam que os investidores podem ter retornos mais interessantes apostando em outras 5 ações que podem gerar dividendos de dois dígitos nos próximos anos.Gerdau (GGBR4) e mais 4 ações para buscar dividendosEntre as recomendações da Empiricus Research para buscar dividendos estão as ações da Gerdau (GGBR4). A companhia é a maior siderúrgica do Brasil e também atua em países da América Latina e América do Norte.Nos últimos anos a companhia passou por uma reestruturação em sua governança. Com a mudança de CEO a Gerdau (GGBR4) passou a focar em retorno e redução de endividamento.Segundo os analistas da Empiricus Research a estratégia tem dado certo e é o que “tem permitido à companhia manter boa eficiência, margens resilientes e baixo endividamento, mesmo nesse momento difícil para o setor”, apontam.Esse contexto permite à companhia continuar distribuindo bons dividendos aos acionistas. Na visão dos analistas da casa, o dividend yield da Gerdau pode chegar aos 10\% nos próximos anos.Por isso, as ações da siderúrgica foram recomendadas pelos analistas da Empiricus Research. A boa notícia é que, além da recomendação de Gerdau (GGBR4), você pode ter acesso a carteira completa gratuitamente.A Empiricus Research está oferecendo como cortesia o relatório com as 5 melhores ações para buscar dividendos em 2024.Para isso, basta clicar neste link e seguir as instruções. Pode ficar tranquilo pois o acesso é gratuito mesmo e você não terá que se comprometer com nada, nem mesmo investir na ação se não quiser.
+
+
+\section{A Visão de Lula sobre a Petrobras}
+Lula justifica o papel da Petrobras na frustrada parceria com a PDVESA, a estatal de petróleo da Venezuela, destacando a complexidade do petróleo venezuelano e a necessidade de proteger o melhor interesse do Brasil. Segundo ele, a decisão de continuar a construir a refinaria bancada apenas pela Petrobras, apesar da falta de cooperação da Venezuela, acabou sendo o melhor curso de ação. As diferenças nas qualidades do petróleo dos dois países exigiam infraestruturas separadas, tornando a parceria menos vantajosa para o Brasil.
+\section{A Visão de Lula sobre a Operação Lava Jato}
+Ao refletir sobre a Operação Lava Jato, Lula formula duas críticas principais à investigação. Em primeiro lugar, ele acredita que a Operação teve o efeito perverso de punir a Petrobras, uma empresa de importância vital para o Brasil, em vez de se concentrar exclusivamente nos indivíduos corruptos. Em segundo lugar, argumenta que as contas do seu governo foram aprovadas e que as acusações contra a Petrobras só começaram cinco anos depois do fim do seu mandato.
+\section{Entidades}
+\subsection{Indivíduos}
+Luiz Inácio Lula da Silva: Ex-presidente do Brasil. Conhecido como Lula, ele serviu como presidente de 2003 a 2010. Lula defendeu as decisões do seu governo em relação à Petrobras e criticou a Operação Lava Jato.
+Jean Paul Prates: Presidente da Petrobras. Conhecido por compartilhar a visão de Lula sobre a Operação Lava Jato e a importância da Petrobras.
+\subsection{Empresas e Organizações}
+Petrobrás: Estatal brasileira de petróleo. Lula argumenta que a empresa desempenhou um papel crucial no setor petrolífero e que sofreu injustamente como resultado da Operação Lava Jato.
+PDVESA: estatal de petróleo da Venezuela. Deveria ter sido parceira da Petrobras em um projeto de refinaria, mas a colaboração fracassou.
+\section{Linha do Tempo}
+Durante a presidência de Lula (2003 a 2010), o Brasil negociou com a Venezuela para iniciar um projeto conjunto de refinaria. A Venezuela não investiu no projeto como prometido e a Petrobras inaugurou a refinaria em 2014 durante a gestão Dilma Rousseff.
+A Operação Lava Jato começou em 2014, visando à corrupção na Petrobras, entre outros setores do governo brasileiro.
+\section{Conclusão}
+Lula, ex-presidente do Brasil, defendeu o papel e as ações da Petrobras em relação à falha parceria com a PDVESA, apontando que a melhor opção para o Brasil era a construção da refinaria sem a cooperação da Venezuela. Criticou fortemente a Operação Lava Jato por atingir a Petrobras como instituição, ao invés de se focar apenas nos indivíduos corruptos, vendo isso como um ataque à soberania do Brasil.
+
+\postextual
+\bibliography{refinaria}
+\end{document}

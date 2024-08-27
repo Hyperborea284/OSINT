@@ -1,0 +1,124 @@
+\documentclass[
+   article,       
+   12pt,          
+   oneside,       
+   a4paper,       
+   english,       
+   brazil,        
+   sumario=tradicional
+   ]{abntex2}
+
+\usepackage{lmodern}       
+\usepackage[T1]{fontenc}   
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}   
+\usepackage{nomencl}       
+\usepackage{color}         
+\usepackage{graphicx}      
+\usepackage{microtype}     
+\usepackage{background}
+\usepackage{datetime}
+\usepackage{lipsum} 
+\usepackage[brazilian,hyperpageref]{backref}
+\usepackage[alf]{abntex2cite}
+
+\newdateformat{mydate}{\THEDAY\space de \monthname[\THEMONTH], \THEYEAR}
+
+\backgroundsetup{
+   scale=1,
+   angle=0,
+   opacity=1,
+   color=black,
+   contents={\begin{tikzpicture}[remember picture, overlay]
+      \node at ([xshift=-2cm,yshift=-2cm] current page.north east)
+            {\includegraphics[width = 3cm]{logo_02.png}}
+       node at ([xshift=2cm,yshift=-2cm] current page.north west)
+            {\includegraphics[width = 3cm]{conf.png}};
+     \end{tikzpicture}}
+}
+
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+\renewcommand{\backref}{}
+\renewcommand*{\backrefalt}[4]{
+   \ifcase #1
+      Nenhuma citação no texto.
+   \or
+      Citado na página #2.
+   \else
+      Citado #1 vezes nas páginas #2.
+   \fi}
+
+\titulo{Anúncio e Detalhamento do Concurso Público Nacional Unificado (CPNU): o "Enem dos Concursos"}
+\tituloestrangeiro{ }
+\autor{{Ephor - Linguística Computacional }}
+\local{{Maringá - Brasil \url{https://www.ephor.com.br/}}}
+\data{{\today\space \currenttime}}
+
+\definecolor{blue}{RGB}{41,5,195}
+\makeatletter
+\hypersetup{
+      pdftitle={\@title}, 
+      pdfauthor={\@author},
+      pdfsubject={Correntes da Antropologia},
+       pdfcreator={LaTeX with abnTeX2},
+      pdfkeywords={abnt}{latex}{abntex}{abntex2}{atigo científico}, 
+      colorlinks=true,   
+      linkcolor=blue,    
+      citecolor=blue,    
+      filecolor=magenta, 
+      urlcolor=blue,
+      bookmarksdepth=4
+}
+\makeatother
+\makeindex
+\setlrmarginsandblock{3cm}{3cm}{*}
+\setulmarginsandblock{3cm}{3cm}{*}
+\checkandfixthelayout
+\setlength{\parindent}{1.3cm}
+\setlength{\parskip}{0.2cm}
+\SingleSpacing
+
+\begin{document}
+
+\selectlanguage{brazil}
+\frenchspacing 
+\maketitle
+
+\textual
+\section{Aviso Importante}
+\textbf{Este documento foi gerado usando processamento de linguística computacional auxiliado por inteligência artificial.} Para tanto foram analisadas as seguintes fontes:  \cite{A_separacao_dos_tres_poderes_Executivo_Legisl}, \cite{Como_vai_funcionar_o_Concurso_Publico_Naciona}, \cite{Concurso_Nacional_Unificado_edital_e_retifica}, \cite{Concurso_unificado_a_novidade_do_momentotggcv}, \cite{Concurso_Unificado_Divulgadas_novas_retificac}, \cite{Enem_dos_Concursos_cerca_de_2_mil_vagas_serao}, \cite{Enem_dos_Concursos_quando_comeca_quanto_custa}, \cite{Enem_dos_concursos_tem_vagas_para_o_Tocantins}, \cite{Inscricoes_para_Enem_dos_Concursos_comecam_ne}, \cite{ldquoEnem_dos_Concursosrdquo_recebe_mais_de_7}, \cite{Saiba_como_vai_funcionar_o_Enem_dos_concursos}.
+\textbf{Portanto este conteúdo requer revisão humana, pois pode conter erros.} Decisões jurídicas, de saúde, financeiras ou similares não devem ser tomadas com base somente neste documento. A Ephor - Linguística Computacional não se responsabiliza por decisões ou outros danos oriundos da tomada de decisão sem a consulta dos devidos especialistas.
+A consulta da originalidade deste conteúdo para fins de verificação de plágio pode ser feita em \href{http://www.ephor.com.br}{ephor.com.br}.
+\section {Introdução}A Ministra de Gestão, Ester Dweck, revelou detalhes referentes ao Concurso Público Nacional Unificado (CPNU), comumente conhecido como \textquotedbl{}Enem dos concursos\textquotedbl{}. O evento marca a primeira vez que um sistema de seleção é realizado em âmbito nacional, visando igualdade de acesso a cargos públicos efetivos em todas as regiões do país. Uma variedade de cargos estão disponíveis, com vagas destinadas para vários grupos: pessoas portadoras de deficiência, negros, indígenas e candidatos de vários níveis de escolaridade.
+\section{Argumentos}
+Quem deseja ingressar no serviço público federal ganhou, em 2024, a melhor oportunidade em muito tempo. O Concurso Público Nacional Unificado, também chamado de Enem dos Concursos, está com inscrições abertas até o dia 9 de fevereiro de 2024.E, nesta série da Radioagência Nacional em dez episódios, vamos explicar melhor como vai funcionar o concurso, quais as áreas de formação e atuação disponíveis e tirar dúvidas sobre vagas, cotas e cadastro reserva.O CNU vai preencher 6.640 vagas em 21 órgãos. Desse total, 692 vagas são para cargos de nível médio. Cerca de mil vagas estão disponíveis para qualquer pessoa que tenha concluído o ensino superior, independentemente da área de formação. Os salários iniciais variam de R\$ 3.741 para cargos de nível médio no IBGE a R\$ 22.921 para Auditor-Fiscal do Trabalho do Ministério do Trabalho e Emprego.A grande vantagem deste modelo de concurso, inédito no Brasil, é que cada candidato pode concorrer a cargos em diferentes órgãos, fazendo uma única prova e pagando apenas uma taxa de inscrição.A ministra da Gestão e Inovação em Serviços Públicos, Esther Dweck, falou sobre o concurso no dia 16 de janeiro, em entrevista ao programa Bom dia, Ministra, do Canal Gov.Ela explicou que o concurso unificado foi a forma encontrada pelo governo para agilizar o processo de contratação para os órgãos federais, já que muitos estão com o quadro de pessoal defasado.Dweck destacou que o formato unificado permite que pessoas de todo o país concorram às vagas, já que as provas serão aplicadas em 220 cidades, de todos os estados, possibilitando uma maior diversidade na contratação dos servidores públicos.\textquotedbl{}A gente começou a perceber que os concursos que abriram, eles às vezes eram só em Brasília. E a gente falou assim, bom, se eu fizer um concurso só em Brasília, não tô garantindo a diversidade do Brasil pra entrar no serviço público brasileiro, né. A gente tem que ter uma maior diversidade trabalhando para fazer políticas, né? Porque quanto mais diversidade nos servidores públicos, mais vai ser também a capacidade de pensar soluções inovadoras para as políticas e conhecer a realidade das pessoas. Então, quanto maior a diversidade que a gente tiver, maior vai ser a capacidade de pensar boas políticas públicas.\textquotedbl{}De acordo com a ministra, governos estaduais e prefeituras já procuraram o ministério para replicar o modelo de seleção unificada. Além disso, Dweck adiantou que o governo já trabalha com a possibilidade de fazer novos certames unificados, conforme as autorizações para as contratações forem dadas.\textquotedbl{}Então a gente teve que fazer priorizar algumas áreas, mas mesmo assim, outras que tiveram concurso recente, não foi o suficiente. Então ao longo deste ano e dos próximos anos, a gente vai autorizar novos concursos e a nossa ideia é que a gente consiga, juntando áreas e fazendo um novo Concurso Nacional Unificado. Então pra esse atual concurso, vale o que está lá, obviamente a gente não vai mexer no edital, mas a gente terá novas vagas em outros Ministérios e teremos novamente, se tudo der certo, esse concurso nacional unificado, e a nossa expectativa é que seja de dois em dois anos.\textquotedbl{}A taxa de inscrição custa R\$ 60 para os cargos de nível médio e R\$ 90 para os de nível superior. Importante destacar que, para fazer a inscrição, é preciso ter uma conta gov.br, que pode ser feita por qualquer pessoa com CPF pelo aplicativo ou pelo site gov.br.Todas as provas do Concurso Nacional Unificado serão aplicadas no dia 5 de maio, em dois turnos, e o resultado final está previsto para 30 de julho, com início da convocação dos aprovados no dia 5 de agosto.Todas as informações sobre o concurso podem ser conferidas no portal gov.br/concursonacional. Nos próximos episódios, vamos detalhar os blocos de áreas de conhecimento e vagas de cada um dos oito editais. Ouça todos os episódios da série sobre Concurso Nacional Unificado.
+
+
+\section {Processo de Inscrição e Seleção}
+As inscrições para o CPNU ocorrerão de 19 de janeiro a 9 de fevereiro. Será cobrada uma taxa de inscrição com valor dependentes do nível educacional do candidato, contudo há várias entidades que poderão pedir isenção. O candidato deve fazer sua escolha de setor e cargo durante a inscrição, ordenando suas opções por preferência. A expectativa é de que o concurso atraia entre 2 e 3 milhões de candidatos.
+\subsection {Estrutura da Prova}
+A programação da prova, organizada pela Fundação Cesgranrio, prevê a aplicação da prova em 5 de maio, abrangendo 220 cidades e dividida em dois turnos. Será uma prova objetiva com 20 perguntas de conhecimentos gerais pela manhã. No turno da tarde, serão aplicadas provas dissertativas e específicas para candidatos de nível superior, e uma redação para os de nível médio.
+\section {Resultados e Convocações}
+A divulgação dos resultados do concurso se dará em duas etapas. A primeira, com as notas das provas objetivas e os resultados preliminares das provas dissertativas e redações, será divulgada em 3 de junho. A divulgação final, com os resultados finais será feita em 30 de julho. A convocação dos aprovados começa a partir de 5 de agosto, oferecendo salários que variam entre R\$3.7 mil e R\$22.9 mil.
+\section {Entidades}
+\subsection {Órgãos Oferecendo Vagas}
+Vários órgãos ligados ao governo estão oferecendo vagas em diversas áreas, dentre eles: Bom Jesus, Corrente, Floriano, Parnaíba, Picos, São Raimundo Nonato e Teresina no Piauí; Belford Roxo, Cabo Frio, Campos dos Goytacazes, Duque de Caxias, Niterói, Nova Iguaçu, Rio de Janeiro, São Gonçalo, São João de Meriti, Volta Redonda no Rio de Janeiro; Araçatuba, Bauru, Caçapava, Campinas, Guarulhos, Hortolândia, Itapeva, Jacareí, Marília, Mauá, Mogi das Cruzes, Osasco, Paulínia, Piracicaba, Presidente Prudente, Ribeirão Preto, Santo André, São Bernardo do Campo, São Caetano do Sul, São José do Rio Preto, São José dos Campos, São Paulo, Sorocaba, Taboão da Serra, Valinhos, Vinhedo em São Paulo.
+\subsection {Ministério da Gestão e da Inovação em Serviços Públicos}
+O Ministério da Gestão e da Inovação em Serviços Públicos (MGI) é a entidade responsável pelo anúncio e execução do concurso.
+\subsection {Fundação Cesgranrio}
+A Fundação Cesgranrio é o órgão escolhido para organizar o concurso. 
+\section {Linha do Tempo}
+19 de janeiro a 9 de fevereiro: Período de Inscrições \\ 
+29 de fevereiro: Divulgação dos dados finais de inscrições \\
+29 de abril: Divulgação dos cartões de confirmação \\
+5 de maio: Aplicação das provas \\
+3 de junho: Divulgação dos resultados das provas objetivas e preliminares das provas discursivas e de redação \\
+30 de julho: Divulgação final dos resultados \\
+5 de agosto: Início da convocação para posse e cursos de formação
+\section {Conclusão} 
+O anúncio do Concurso Público Nacional Unificado constitui um marco para a gestão e inovação no setor público brasileiro. Este sistema de seleção busca oferecer igualdade de acesso a cargos públicos por todo o território nacional, promovendo, assim, maior representatividade e diversidade. Com regras claras e procedimentos justos, o "Enem dos Concursos” possui potencial para ser um concurso altamente competitivo e criterioso, preparado para selecionar os candidatos mais qualificados para as vagas disponíveis.
+
+
+\postextual
+\bibliography{concurso_2024}
+\end{document}

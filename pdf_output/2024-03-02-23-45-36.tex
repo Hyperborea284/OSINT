@@ -1,0 +1,125 @@
+\documentclass[
+   article,       
+   12pt,          
+   oneside,       
+   a4paper,       
+   english,       
+   brazil,        
+   sumario=tradicional
+   ]{abntex2}
+
+\usepackage{lmodern}       
+\usepackage[T1]{fontenc}   
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}   
+\usepackage{nomencl}       
+\usepackage{color}         
+\usepackage{graphicx}      
+\usepackage{microtype}     
+\usepackage{background}
+\usepackage{datetime}
+\usepackage{lipsum} 
+\usepackage[brazilian,hyperpageref]{backref}
+\usepackage[alf]{abntex2cite}
+
+\newdateformat{mydate}{\THEDAY\space de \monthname[\THEMONTH], \THEYEAR}
+
+\backgroundsetup{
+   scale=1,
+   angle=0,
+   opacity=1,
+   color=black,
+   contents={\begin{tikzpicture}[remember picture, overlay]
+      \node at ([xshift=-2cm,yshift=-2cm] current page.north east)
+            {\includegraphics[width = 3cm]{logo_02.png}}
+       node at ([xshift=2cm,yshift=-2cm] current page.north west)
+            {\includegraphics[width = 3cm]{conf.png}};
+     \end{tikzpicture}}
+}
+
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+\renewcommand{\backref}{}
+\renewcommand*{\backrefalt}[4]{
+   \ifcase #1
+      Nenhuma citação no texto.
+   \or
+      Citado na página #2.
+   \else
+      Citado #1 vezes nas páginas #2.
+   \fi}
+
+\titulo{Título não encontrado}
+\tituloestrangeiro{ }
+\autor{{Ephor - Linguística Computacional }}
+\local{{Maringá - Brasil \url{https://www.ephor.com.br/}}}
+\data{{\today\space \currenttime}}
+
+\definecolor{blue}{RGB}{41,5,195}
+\makeatletter
+\hypersetup{
+      pdftitle={\@title}, 
+      pdfauthor={\@author},
+      pdfsubject={Correntes da Antropologia},
+       pdfcreator={LaTeX with abnTeX2},
+      pdfkeywords={abnt}{latex}{abntex}{abntex2}{atigo científico}, 
+      colorlinks=true,   
+      linkcolor=blue,    
+      citecolor=blue,    
+      filecolor=magenta, 
+      urlcolor=blue,
+      bookmarksdepth=4
+}
+\makeatother
+\makeindex
+\setlrmarginsandblock{3cm}{3cm}{*}
+\setulmarginsandblock{3cm}{3cm}{*}
+\checkandfixthelayout
+\setlength{\parindent}{1.3cm}
+\setlength{\parskip}{0.2cm}
+\SingleSpacing
+
+\begin{document}
+
+\selectlanguage{brazil}
+\frenchspacing 
+\maketitle
+
+\textual
+\section{Aviso Importante}
+\textbf{Este documento foi gerado usando processamento de linguística computacional auxiliado por inteligência artificial.} Para tanto foram analisadas as seguintes fontes:  \cite{A_CAUSA_E_AS_POLITICAS_DE_DIREITOS_HUMANOS_NO}, \cite{Ciclo_de_Politicas_Publicas_por_que_e_importa}, \cite{Conheca_o_ciclo_das_politicas_publicas__Polit}, \cite{Educacao_Inclusiva_Conheca_o_historico_da_leg}, \cite{Em_Buenos_Aires_Silvio_Almeida_defende_a_inst}, \cite{Entendendo_a_Tipologia_de_Politicas_Publicas_}, \cite{Escola_Nacional_de_Administracao_Publica__Wik}, \cite{Especialista_em_politicas_publicas_e_gestao_g}, \cite{FEDERALISMO_E_POLITICAS_PUBLICAS_NO_BRASIL_Ho}, \cite{Institucionalizacao_das_politicas_em_Direitos}, \cite{Ministerio_do_Planejamento_e_Orcamento__Wikip}, \cite{Ministro_defende_que_direitos_humanos_precisa}, \cite{Politica_conceito_politicas_publicas_e_partid}, \cite{Politica_publica__o_que_e_tipos_de_politicas_}, \cite{Politica_publica__Wikipedia_a_enciclopedia_li}, \cite{Politicas_publicas__Wikipedia_la_enciclopedia}, \cite{Politicas_Publicas_entenda_o_que_sao_para_que}, \cite{Politicas_Publicas_o_que_sao_e_para_que_serve}, \cite{Politicas_publicas_o_que_sao_e_para_que_serve}, \cite{Politicas_publicas_o_que_sao_quem_faz_e_tipos}, \cite{Politicas_publicas_o_que_sao_tipos_e_exemplos}, \cite{Revista_USP_119__Dossie_1_Democracia_e_politi}, \cite{TCU_Ciclo_das_politicas_publicas__Tudo_o_que_}.
+\textbf{Portanto este conteúdo requer revisão humana, pois pode conter erros.} Decisões jurídicas, de saúde, financeiras ou similares não devem ser tomadas com base somente neste documento. A Ephor - Linguística Computacional não se responsabiliza por decisões ou outros danos oriundos da tomada de decisão sem a consulta dos devidos especialistas.
+A consulta da originalidade deste conteúdo para fins de verificação de plágio pode ser feita em \href{http://www.ephor.com.br}{ephor.com.br}.
+
+\section{Introdução}
+
+A temática dos direitos humanos vem ganhando uma visibilidade crescente no Brasil, atravessando diversas fases históricas, desde períodos de repressão até a atualidade, marcada por desafios e avanços em direção à afirmação e ao fortalecimento desses direitos. Nota-se um movimento em torno da institucionalização da causa dos direitos humanos, que visa a integrá-la em todas as esferas e níveis de governo, promovendo uma política de Estado que ultrapassa as mudanças de administração governamental. Este relatório visa compreender a trajetória e a institucionalização das políticas de direitos humanos no Brasil, bem como os desafios e avanços enfrentados na busca pela garantia desses direitos essenciais.
+
+\section{Ascensão e Institucionalização dos Direitos Humanos no Brasil}
+
+\subsection{O Contexto Histórico e a Emergência da Causa dos Direitos Humanos}
+
+Historicamente, a emergência da causa dos direitos humanos no Brasil está intrinsecamente relacionada à resistência contra o regime militar-autoritário. Neste período, estratégias de enfrentamento político e jurídico foram adotadas, com destaque para a atuação de grupos vinculados à Igreja Católica e de advogados militantes em defesa dos presos políticos. A ditadura militar, iniciada em 1964, promoveu uma série de atos institucionais que restringiram os grupos políticos e consolidaram o poder das elites militares, afetando diretamente o espaço judicial e a garantia de direitos políticos. A resposta a essa repressão moldou o ativismo nas décadas seguintes, redefinindo as lutas pelos direitos humanos e dando origem aos primeiros movimentos que reivindicavam esses direitos de maneira mais explícita.
+
+\subsection{Consolidação dos Direitos Humanos como Política de Estado}
+
+Avançando para as décadas de 90 e 2000, observa-se uma diversificação e expansão das políticas de direitos humanos, que passam a ser incorporadas nas estruturas burocráticas e institucionais do Estado. Este processo marca a transformação dos direitos humanos em "política de Estado", com a implantação de programas específicos nas regiões sul, sudeste e norte do país e a construção de uma relação mais estreita entre movimentos militantes e a burocracia governamental. Esta fase é caracterizada pela articulação de marcos institucionais significativos na redemocratização do Brasil, como a Constituição Federal de 1988, que consolidou os direitos humanos como fundamento do Estado Democrático de Direito.
+
+\section{Desafios Recentes e Institucionalização da Política de Direitos Humanos}
+
+\subsection{Articulação com a Sociedade e Desafios Contemporâneos}
+
+Em um cenário contemporâneo, a institucionalização da política de direitos humanos proposta pelo Ministro dos Direitos Humanos e da Cidadania, Silvio Almeida, durante o 3º Fórum Mundial de Direitos Humanos 2023, reflete a necessidade urgente de integrar a perspectiva dos direitos humanos em todas as áreas do governo. Esta abordagem transversal visa proteger os avanços alcançados e prevenir retrocessos, independentemente das mudanças de administração governamental. A promoção dos direitos humanos como política de Estado envolve a mobilização de diferentes ministérios e setores, com o objetivo de irradiar essas políticas coordenadas por todo o planejamento governamental.
+
+\subsection{A Importância da Aproximação entre Economia e Direitos Humanos}
+
+A defesa de uma política de Estado robusta de direitos humanos destaca a importância de aproximá-la do debate econômico, reconhecendo que as pessoas mais afetadas pela violação dos direitos são também as maiores beneficiárias de uma política de direitos humanos efetiva e inclusiva. Esta necessidade enfatiza a questão existencial dos direitos humanos, além de um mero julgamento moral.
+
+\section{Conclusão}
+
+A trajetória dos direitos humanos no Brasil, desde a resistência ao regime militar até a proposição de uma institucionalização da política de direitos humanos como foco no 3º Fórum Mundial de Direitos Humanos 2023, revela uma complexa transição de uma "causa militante" para uma "política de Estado". A consolidação dos direitos humanos no país enfrenta o desafio contínuo de manter os avanços alcançados, integrando essa perspectiva em todas as esferas de governo e assegurando que a proteção e a promoção desses direitos sejam uma constante, independentemente das mudanças no cenário político. A institucionalização proposta reflete um esforço para prevenir retrocessos e solidificar os direitos humanos como pilares fundamentais da cidadania e da democracia no Brasil.
+
+                                
+\postextual
+\bibliography{con_ger_pol_pub_03.bib}
+\end{document}
+

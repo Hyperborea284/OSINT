@@ -1,0 +1,125 @@
+\documentclass[
+   article,       
+   12pt,          
+   oneside,       
+   a4paper,       
+   english,       
+   brazil,        
+   sumario=tradicional
+   ]{abntex2}
+
+\usepackage{lmodern}       
+\usepackage[T1]{fontenc}   
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}   
+\usepackage{nomencl}       
+\usepackage{color}         
+\usepackage{graphicx}      
+\usepackage{microtype}     
+\usepackage{background}
+\usepackage{datetime}
+\usepackage{lipsum} 
+\usepackage[brazilian,hyperpageref]{backref}
+\usepackage[alf]{abntex2cite}
+
+\newdateformat{mydate}{\THEDAY\space de \monthname[\THEMONTH], \THEYEAR}
+
+\backgroundsetup{
+   scale=1,
+   angle=0,
+   opacity=1,
+   color=black,
+   contents={\begin{tikzpicture}[remember picture, overlay]
+      \node at ([xshift=-2cm,yshift=-2cm] current page.north east)
+            {\includegraphics[width = 3cm]{logo_02.png}}
+       node at ([xshift=2cm,yshift=-2cm] current page.north west)
+            {\includegraphics[width = 3cm]{conf.png}};
+     \end{tikzpicture}}
+}
+
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+\renewcommand{\backref}{}
+\renewcommand*{\backrefalt}[4]{
+   \ifcase #1
+      Nenhuma citação no texto.
+   \or
+      Citado na página #2.
+   \else
+      Citado #1 vezes nas páginas #2.
+   \fi}
+
+\titulo{Ameaça à Democracia: Análise dos Atentados aos Três Poderes Brasileiros}
+\tituloestrangeiro{ }
+\autor{{Ephor - Linguística Computacional }}
+\local{{Maringá - Brasil \url{https://www.ephor.com.br/}}}
+\data{{\today\space \currenttime}}
+
+\definecolor{blue}{RGB}{41,5,195}
+\makeatletter
+\hypersetup{
+      pdftitle={\@title}, 
+      pdfauthor={\@author},
+      pdfsubject={Correntes da Antropologia},
+       pdfcreator={LaTeX with abnTeX2},
+      pdfkeywords={abnt}{latex}{abntex}{abntex2}{atigo científico}, 
+      colorlinks=true,   
+      linkcolor=blue,    
+      citecolor=blue,    
+      filecolor=magenta, 
+      urlcolor=blue,
+      bookmarksdepth=4
+}
+\makeatother
+\makeindex
+\setlrmarginsandblock{3cm}{3cm}{*}
+\setulmarginsandblock{3cm}{3cm}{*}
+\checkandfixthelayout
+\setlength{\parindent}{1.3cm}
+\setlength{\parskip}{0.2cm}
+\SingleSpacing
+
+\begin{document}
+
+\selectlanguage{brazil}
+\frenchspacing 
+\maketitle
+
+\textual
+\section{Aviso Importante}
+\textbf{Este documento foi gerado usando processamento de linguística computacional auxiliado por inteligência artificial.} Para tanto foram analisadas as seguintes fontes:  \cite{8_de_janeiro_38_confessaram_crimes_e_fecharam}, \cite{8_de_Janeiro_Agentes_do_caos_seguem_ativos_e_}, \cite{8_de_janeiro_de_2023_o_dia_que_a_democracia_f}, \cite{Lula_diz_que_nao_havera_perdao_para_os_culpad}, \cite{Quaest_89_reprovam_atos_golpistas_de_8_de_jan}, \cite{Roberto_Amaral_8_de_janeiro_adeus_as_ilusoesg}, \cite{Visao_do_Correio_Democracia_fortalecidaqpkgpw}.
+\textbf{Portanto este conteúdo requer revisão humana, pois pode conter erros.} Decisões jurídicas, de saúde, financeiras ou similares não devem ser tomadas com base somente neste documento. A Ephor - Linguística Computacional não se responsabiliza por decisões ou outros danos oriundos da tomada de decisão sem a consulta dos devidos especialistas.
+A consulta da originalidade deste conteúdo para fins de verificação de plágio pode ser feita em \href{http://www.ephor.com.br}{ephor.com.br}.
+\section{Introdução}
+O compromisso com a preservação da democracia ganhou destaque como tema central no 1º aniversário dos atentados às sedes dos Três Poderes da República, ocorridos em Brasília. Os eventos observados foram protagonizados por grupos extremistas que contestavam o resultado das eleições de 2022. Durante uma cerimônia no Congresso Nacional, várias autoridades, incluindo o Presidente Luiz Inácio Lula da Silva, destacaram a necessidade de punir rigorosamente os responsáveis por tais atos de vandalismo. Isso inclui os perpetradores diretos e aqueles que participaram indiretamente.\textbackslash{}section\{Ameaça à Democracia e Medidas de Prevenção\}
+\section{Argumentos}
+O presidente Luiz Inácio Lula da Silva afirmou nesta segunda-feira (8), no Congresso Nacional, que não haverá anistia para os que participaram direta e indiretamente dos atentados às sedes dos Três Poderes em Brasília, há exatamente um ano. Nas palavras do presidente, os envolvidos deverão ser “exemplarmente punidos”.“Não há perdão para quem atenta contra a democracia, contra seu país e contra seu próprio povo. O perdão soaria como impunidade, e a impunidade como salvo-conduto para novos atos terroristas no País”, discursou Lula no ato Democracia Inabalada.O evento marcou um ano dos atos de vandalismo e depredação dos palácios do Congresso Nacional, do Supremo Tribunal Federal e do Planalto por extremistas que contestavam o resultado das eleições de 2022.Segundo Lula, se a tentativa de golpe fosse bem-sucedida, “a vontade soberana expressa nas ruas teria sido roubada e a democracia teria sido destruída”. Uma eventual vitória do golpe de Estado pela extrema direita, disse ainda o presidente, mergulharia o País em “caos econômico e social”, com cenário em que \textquotedbl{}adversários políticos poderiam ser julgados e enforcados em praça pública”.Lula elogiou a atuação de autoridades no dia 8 de janeiro, entre elas os militares que se recusaram a apoiar o golpe: “A coragem de parlamentares, governadores e governadoras, ministros da Suprema Corte, ministros e ministras de Estado, militares legalistas e, sobretudo, da maioria do povo brasileiro garantiu que estivéssemos celebrando a vitória da democracia contra o autoritarismo”, disse.Ele também ressaltou a atuação das polícias legislativas do Senado e da Câmara, que mesmo em minoria demonstraram “ato de coragem e de responsabilidade” ao controlar o avanço do vandalismo no Congresso Nacional.Além de Lula, participaram da solenidade os presidentes do Congresso Nacional, Rodrigo Pacheco; do Supremo Tribunal Federal (STF), Luís Roberto Barroso; e do Tribunal Superior Eleitoral (TSE), Alexandre de Moraes. Participaram ainda o procurador-geral da Republica, Paulo Gonet; e a governadora do Rio Grande do Norte, Fátima Bezerra, como representante dos governadores, entre outras autoridades.Punição Relator dos inquéritos sobre os atos antidemocráticos de 8 de janeiro de 2023, o ministro Alexandre de Moraes reafirmou o compromisso do Supremo com a punição dos culpados pela invasão e a depredação das sedes dos três Poderes.“Absolutamente todos aqueles que pactuaram covardemente com a quebra da democracia e com a tentativa de instalação de um Estado de exceção serão devidamente investigados, processados e responsabilizados na medida de suas culpabilidades”, afirmou Moraes. “Ignorar tão grave atentado à democracia e ao Estado de Direito seria equivalente a encorajar grupos extremistas à prática de novos atos criminosos e golpistas.”Um balanço dos inquéritos sobre o 8 de janeiro de 2023 divulgado neste domingo (7) por Moraes mostrou que foram tomadas mais de 6 mil decisões ao longo de 2023, entre operações de busca e apreensão (255), quebras de sigilo (355), prisões em flagrante (243) e mandados de prisão após investigações da Polícia Federal (81). Até dezembro, cerca de 70 pessoas continuavam presas. Ao todo, o Supremo recebeu 1.345 denúncias da Procuradoria-Geral da República contra envolvidos nos atos antidemocráticos.Responsabilização A responsabilização dos que participaram dos atos de vandalismo há um ano também foi defendida pelo procurador-geral da República, Paulo Gonet, e pela governadora Fátima Bezerra.Gonet defendeu tal responsabilização, independentemente da posição que as pessoas ocupem na sociedade. “É o próprio povo que impõe, por meio das leis, que sejam tratadas como crime as inadmissíveis ações e insurgências contra a democracia”, afirmou o procurador-geral. “Cabe ao Ministério Público o que já vem sendo feito há um ano: apurar a responsabilidade de todos e propor ao Judiciário os castigos merecidos. Esta é a nossa forma de prevenir que o passado que se lamenta não ressurja e venha a desordenar o porvir.”Também Fátima Bezerra cobrou responsabilização de todos que “ousaram destruir” a democracia, seja os que vandalizaram, financiaram, organizaram ou incitaram a “tentativa de golpe”.“Sem anistia! E não se trata de sentimento de vingança ou de revanchismo. É antes de tudo um ato pedagógico, os que atentaram contra a democracia cometeram um crime e precisam responder pelos seus atos”, defendeu a governadora do Rio Grande do Norte. “A anistia é uma afronta à verdade, à memória e à justiça. Nossa luta é contribuir para que esse passado sombrio não seja esquecido e que nunca mais aconteça.”Na avaliação da governadora, o ato Democracia Inabalada simboliza a volta à normalidade democrática, a retomada do pacto federativo, a valorização da soberania popular e o repúdio ao autoritarismo, ao fascismo e à barbárie.Em sua fala, o senador Rodrigo Pacheco também destacou a importância do ato desta segunda-feira no Congresso. “Esse ato é um ato de reafirmação da opção democrática feita pelo povo brasileiro, reafirmação de que a defesa da democracia é uma ação permanente e constante, reafirmação da maturidade e da solidez de nossas instituições”, disse.Foram as instituições republicanas, na avaliação de Rodrigo Pacheco, que frearam a evolução dos atentados. O senador repudiou ainda a tentativa de desacreditar o sistema eleitoral brasileiro e o resultado da escolha popular. “Desqualificar e desacreditar o processo eleitoral não ofende apenas as instituições republicanas e o processo eleitoral, ofende de uma maneira ainda mais grave o povo brasileiro”, discursou.Redes sociais No ato, o ministro Alexandre de Moraes defendeu ainda a aprovação de novas regras para o uso das redes sociais, como forma de evitar a cooptação de pessoas pelo que chamou de “novo populismo digital extremista”.“A falta de transparência na utilização da inteligência artificial e dos algoritmos tornaram os usuários suscetíveis à demagogia e à manipulação política, possibilitando a livre atuação desse novo populismo digital extremista e de seus aspirantes a ditadores”, disse Moraes.Patrimônio Além de reafirmar a importância da democracia, o evento celebrou a restituição ao patrimônio público de alguns itens depredados durante a invasão. Houve o descerramento de placa alusiva à restauração da tapeçaria de Burle Marx, que faz parte do acervo do Senado Federal, e ainda a entrega simbólica, a Luís Roberto Barroso, da Constituição Federal levada do STF durante os atos antidemocráticos e recuperada posteriormente.O presidente do STF, ministro Luís Roberto Barroso, lamentou a destruição de parte do acervo cultural e histórico do Supremo, mas destacou que a destruição física dos prédios não foi capaz de abalar o que cada um dos Poderes simboliza: a vontade majoritária do povo.
+
+
+\subsection{Fala Presidencial}
+O presidente Luiz Inácio Lula da Silva afirmou que não haveria anistia para os responsáveis pelos atentados. A exigência de responsabilidade tem como objetivo evitar a impunidade, que poderia ser interpretada como um salvo-conduto para novos atos terroristas. A ameaça de retaliação em larga escala, incluindo a possibilidade de um caos econômico e social caso o golpe fosse bem-sucedido, foi destacada como motivo para a punição exemplar.
+
+\subsection{Atuação das Autoridades e Apoio Popular}
+Foi reconhecido o papel crítico desempenhado por várias autoridades na resistência à tentativa de golpe. Incluído o corpo de militares legalistas, autoridades legislativas do Senado e da Câmara, e a população em geral, todos contribuíram para a manutenção da democracia e foram elogiados pelo Presidente.
+\section{Investigações e Processos Jurídicos}
+
+\subsection{Compromisso do Supremo Tribunal Federal}
+Alexandre de Moraes, ministro do Supremo Tribunal Federal e relator dos inquéritos relacionados aos atos antidemocráticos, reafirmou o compromisso do Supremo em garantir a justiça e a punição dos culpados. Destacou-se também a necessidade de responsabilização completa e imparcial, sem diferenciar a posição social dos responsáveis.
+
+\subsection{Eficácia das Ações Legais}
+Os esforços para investigar e processar os envolvidos foram intensivos. Até o final de 2023, mais de 6 mil decisões legais foram tomadas, resultando em uma série de prisões e ações de busca e apreensão.
+\section{Repercussões Sociais e Políticas}
+
+\subsection{A Responsabilidade Social e Política}
+A defesa da responsabilização foi ecoada por outras autoridades, como o procurador-geral da República, Paulo Gonet, e a governadora do Rio Grande do Norte, Fátima Bezerra. O ataque à democracia foi caracterizado por Bezerra como um delito que requer responsabilização, não como parte de um desejo de vingança, mas como uma ação pedagógica.
+
+\subsection{Ameaças e Regulação das Redes Sociais}
+Uma discussão adicional surgiu em torno do papel das redes sociais e do que Alexandre de Moraes descreveu como "novo populismo digital extremista". Ele sugeriu a necessidade de novas regras para o uso de redes sociais e algoritmos, a fim de proteger os indivíduos da demagogia e da manipulação política.
+
+\subsection{Restauração Cultural e Simbólica}
+O evento também marcou a recuperação de alguns itens patrimoniais depredados durante os atos, como a tapeçaria de Burle Marx, do acervo do Senado Federal. Tal recuperação simboliza a resiliência das instituições democráticas.
+\section{Conclusão}
+O fortalecimento da democracia e a punição dos responsáveis pelos atentados foi destacado na cerimônia. O ato representou tanto a condenação dos atos anteriores, quanto a determinação para evitar a repetição desses incidentes. A celebração, porém, foi temperada com a conscientização de que a luta pela democracia e contra o autoritarismo é um esforço contínuo e exigirá vigilância constante da sociedade e das instituições republicanas.
+
+\postextual
+\bibliography{8_jan_brasil}
+\end{document}

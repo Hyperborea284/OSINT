@@ -1,0 +1,124 @@
+\documentclass[
+   article,       
+   12pt,          
+   oneside,       
+   a4paper,       
+   english,       
+   brazil,        
+   sumario=tradicional
+   ]{abntex2}
+
+\usepackage{lmodern}       
+\usepackage[T1]{fontenc}   
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}   
+\usepackage{nomencl}       
+\usepackage{color}         
+\usepackage{graphicx}      
+\usepackage{microtype}     
+\usepackage{background}
+\usepackage{datetime}
+\usepackage{lipsum} 
+\usepackage[brazilian,hyperpageref]{backref}
+\usepackage[alf]{abntex2cite}
+
+\newdateformat{mydate}{\THEDAY\space de \monthname[\THEMONTH], \THEYEAR}
+
+\backgroundsetup{
+   scale=1,
+   angle=0,
+   opacity=1,
+   color=black,
+   contents={\begin{tikzpicture}[remember picture, overlay]
+      \node at ([xshift=-2cm,yshift=-2cm] current page.north east)
+            {\includegraphics[width = 3cm]{logo_02.png}}
+       node at ([xshift=2cm,yshift=-2cm] current page.north west)
+            {\includegraphics[width = 3cm]{conf.png}};
+     \end{tikzpicture}}
+}
+
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+\renewcommand{\backref}{}
+\renewcommand*{\backrefalt}[4]{
+   \ifcase #1
+      Nenhuma citação no texto.
+   \or
+      Citado na página #2.
+   \else
+      Citado #1 vezes nas páginas #2.
+   \fi}
+
+\titulo{Anúncio e Detalhamento do Concurso Público Nacional Unificado (CPNU): o "Enem dos Concursos"}
+\tituloestrangeiro{ }
+\autor{{Ephor - Linguística Computacional }}
+\local{{Maringá - Brasil \url{https://www.ephor.com.br/}}}
+\data{{\today\space \currenttime}}
+
+\definecolor{blue}{RGB}{41,5,195}
+\makeatletter
+\hypersetup{
+      pdftitle={\@title}, 
+      pdfauthor={\@author},
+      pdfsubject={Correntes da Antropologia},
+       pdfcreator={LaTeX with abnTeX2},
+      pdfkeywords={abnt}{latex}{abntex}{abntex2}{atigo científico}, 
+      colorlinks=true,   
+      linkcolor=blue,    
+      citecolor=blue,    
+      filecolor=magenta, 
+      urlcolor=blue,
+      bookmarksdepth=4
+}
+\makeatother
+\makeindex
+\setlrmarginsandblock{3cm}{3cm}{*}
+\setulmarginsandblock{3cm}{3cm}{*}
+\checkandfixthelayout
+\setlength{\parindent}{1.3cm}
+\setlength{\parskip}{0.2cm}
+\SingleSpacing
+
+\begin{document}
+
+\selectlanguage{brazil}
+\frenchspacing 
+\maketitle
+
+\textual
+\section{Aviso Importante}
+\textbf{Este documento foi gerado usando processamento de linguística computacional auxiliado por inteligência artificial.} Para tanto foram analisadas as seguintes fontes:  \cite{Concurso_Nacional_Unificado_edital_e_retifica}, \cite{Concurso_unificado_a_novidade_do_momentoextbu}, \cite{Concurso_Unificado_Divulgadas_novas_retificac}, \cite{Enem_dos_Concursos_cerca_de_2_mil_vagas_serao}, \cite{Enem_dos_Concursos_quando_comeca_quanto_custa}, \cite{Enem_dos_concursos_tem_vagas_para_o_Tocantins}, \cite{Inscricoes_para_Enem_dos_Concursos_comecam_ne}, \cite{ldquoEnem_dos_Concursosrdquo_recebe_mais_de_7}, \cite{Saiba_como_vai_funcionar_o_Enem_dos_concursos}.
+\textbf{Portanto este conteúdo requer revisão humana, pois pode conter erros.} Decisões jurídicas, de saúde, financeiras ou similares não devem ser tomadas com base somente neste documento. A Ephor - Linguística Computacional não se responsabiliza por decisões ou outros danos oriundos da tomada de decisão sem a consulta dos devidos especialistas.
+A consulta da originalidade deste conteúdo para fins de verificação de plágio pode ser feita em \href{http://www.ephor.com.br}{ephor.com.br}.
+\section {Introdução}A Ministra de Gestão, Ester Dweck, revelou detalhes referentes ao Concurso Público Nacional Unificado (CPNU), comumente conhecido como \textquotedbl{}Enem dos concursos\textquotedbl{}. O evento marca a primeira vez que um sistema de seleção é realizado em âmbito nacional, visando igualdade de acesso a cargos públicos efetivos em todas as regiões do país. Uma variedade de cargos estão disponíveis, com vagas destinadas para vários grupos: pessoas portadoras de deficiência, negros, indígenas e candidatos de vários níveis de escolaridade.
+\section{Argumentos}
+Na semana passada foram abertas as inscrições para o “Concurso Público Nacional Unificado”, que ganhou da imprensa o apelido de “Enem dos concursos”. Como o nome sugere, trata-se de uma seleção única para 6.640 vagas existentes em 21 órgãos federais, com possibilidade de lotação em diversas cidades do país. As provas de conhecimento serão aplicadas simultaneamente em até 180 cidades, em todas as regiões. Trata-se de uma iniciativa inovadora que rompe a tradição de realização de concursos focados em órgãos ou entidades e cargos específicos: a seleção é dividida em oito blocos temáticos e permitirá o acesso a diferentes cargos e carreiras.Na visão do Ministério da Gestão e da Inovação em Serviços Públicos, espera-se conseguir ganho de eficiência (a integração permitirá redução de custos), de eficácia (por permitir o provimento conjunto das vagas), de efetividade (a lógica de “blocos temáticos” permite visão sistêmica das capacidades estatais e racionaliza o processo seletivo) e de equidade (permitindo aplicação com maior dispersão no território nacional) [1].A necessidade de experimentar e buscar inovações no planejamento e realização de concursos públicos foi abordada nesta mesma coluna, há pouco tempo, pelo professor Paulo Modesto, que identificou uma série de problemas:“[…] ausência de uma política integrada de recursos humanos no planejamento dos concursos; a falta de critérios consistentes para a composição de bancas; a repetição de bancas e entidades organizadoras; o foco excessivamente jurídico na definição dos procedimentos do concurso; a simplificação rasteira das provas; a baixa atenção a aspectos gerenciais e a capacidades necessárias ao cargo ou emprego em disputa; a judicialização excessiva das provas e resultados; a ausência de regulação adequada da relação entre o Poder Público e a entidade organizadora do concurso; o abuso nas taxas de inscrição, sem parâmetros relacionados aos cargos em disputa ou aos custos efetivos de organização das provas; a utilização excessiva de cadastros de reserva e a ausência de previsão de estipulação mínima de cargos para imediato provimento, correlacionado ao número de cargos vagos; a ausência de disciplina sobre direitos ressarcitórios dos candidatos, especialmente em face de cancelamentos de provas e reagendamento de concursos; a disciplina adequada sobre a possibilidade de concursos em formato digital; a previsão de prazos mínimos para inscrição em concursos, para interposição de recursos e para análise de provas realizadas; a baixa valorização da experiência de trabalho dos candidatos e a excessiva valorização do treinamento para a resposta a perguntas objetivas e gerais; a desatenção com os concursos da área meio; ausência de requisitos objetivos para definição sobre a prorrogação ou não da validade dos concursos, atendidos requisitos de planejamento financeiro e gerencial da própria Administração Pública” [2].O inventário de problemas chega a ser desanimador, e a má notícia é que existem outros tantos que frequentemente se renovam. Entretanto, a iniciativa merece atenção em razão de sua potencialidade para produzir resultados positivos.Inicialmente, a racionalização e convergência do esforço de órgãos e entidades variados é importante. A realização de certames diferentes para cargos assemelhados – na administração federal – poderia trazer não somente mais gastos como também menos racionalidade para objetivar a seleção, com a utilização de parâmetros distintos para cargos que necessitam de competências e habilidades assemelhadas. A possibilidade de escolha de vários cargos em ordem de prioridade, dentro do mesmo bloco temático, também contribui para a racionalidade do processo de ingresso. Aliás, a seleção com base em competências – e não somente em conhecimentos – é um desafio ainda em aberto, cuja dificuldade ganha envergadura em um cenário que demanda descrição de atributos em lei, que devem ter relativa estabilidade. Como descrever competências na lei de forma a não engessar o perfil dos servidores e, ao mesmo tempo, proporcionar atualização e capacitação continuadas continua sendo um problema sem solução definitiva.Outro problema prático cuja solução pode ser aprimorada por intermédio do concurso unificado é a grande mobilidade em determinadas carreiras, com instabilidade na recomposição do quadro de pessoal em algumas instituições e em alguns locais. Carreiras menos atrativas (sobretudo, em razão da menor retribuição pecuniária) geralmente são objeto de maior rotatividade: candidatos com maior preparo costumam buscar outra posição pública, desfalcando aquela inicial em determinado momento. Os problemas de lotação (relativos ao local da prestação de serviços) também são frequentes, sobretudo em órgãos federais: candidatos que passam a trabalhar longe de sua cidade de origem comumente – e naturalmente – buscam formas de retornar para ‘casa’, seja por meio de movimentação na carreira, seja por meio de aprovação em outros concursos. Esses problemas demandam uma compreensão de carreira que não se limite ao ingresso (no caso, o procedimento do concurso público). Com efeito, há necessidade da criação de mecanismos que estimulem (e mesmo exijam) a permanência em locais de difícil lotação, ao mesmo tempo em que prevejam a atualização contínua da força de trabalho necessário e aquela disponível. A gestão dos diversos cadastros de reserva em um cenário que permite indicação de uma ordem de preferência de cargos será desafiadora. Entretanto, trata-se de ação possível por centrada em uma esfera federativa – União –, quando regulada por regras detalhadas que não se restrinjam ao edital.À guisa de conclusão, podemos imaginar experimentos semelhantes em estados e municípios. Nos municípios, notadamente naqueles de pequeno porte, seria possível pensar até mesmo na organização conjunta de um só concurso abrangendo municípios variados, permitindo racionalização dos custos, otimização da execução e mesmo um maior número de inscritos. Por fim, a despeito da novidade que merece atenção e elogios, é importante assentar que o concurso público é somente o marco inicial da vida funcional: para que possamos falar em verdadeira gestão de pessoal, é preciso que o concurso esteja conectado ao estágio probatório, à capacitação continuada e à avaliação permanente de desempenho.
+
+
+\section {Processo de Inscrição e Seleção}
+As inscrições para o CPNU ocorrerão de 19 de janeiro a 9 de fevereiro. Será cobrada uma taxa de inscrição com valor dependentes do nível educacional do candidato, contudo há várias entidades que poderão pedir isenção. O candidato deve fazer sua escolha de setor e cargo durante a inscrição, ordenando suas opções por preferência. A expectativa é de que o concurso atraia entre 2 e 3 milhões de candidatos.
+\subsection {Estrutura da Prova}
+A programação da prova, organizada pela Fundação Cesgranrio, prevê a aplicação da prova em 5 de maio, abrangendo 220 cidades e dividida em dois turnos. Será uma prova objetiva com 20 perguntas de conhecimentos gerais pela manhã. No turno da tarde, serão aplicadas provas dissertativas e específicas para candidatos de nível superior, e uma redação para os de nível médio.
+\section {Resultados e Convocações}
+A divulgação dos resultados do concurso se dará em duas etapas. A primeira, com as notas das provas objetivas e os resultados preliminares das provas dissertativas e redações, será divulgada em 3 de junho. A divulgação final, com os resultados finais será feita em 30 de julho. A convocação dos aprovados começa a partir de 5 de agosto, oferecendo salários que variam entre R\$3.7 mil e R\$22.9 mil.
+\section {Entidades}
+\subsection {Órgãos Oferecendo Vagas}
+Vários órgãos ligados ao governo estão oferecendo vagas em diversas áreas, dentre eles: Bom Jesus, Corrente, Floriano, Parnaíba, Picos, São Raimundo Nonato e Teresina no Piauí; Belford Roxo, Cabo Frio, Campos dos Goytacazes, Duque de Caxias, Niterói, Nova Iguaçu, Rio de Janeiro, São Gonçalo, São João de Meriti, Volta Redonda no Rio de Janeiro; Araçatuba, Bauru, Caçapava, Campinas, Guarulhos, Hortolândia, Itapeva, Jacareí, Marília, Mauá, Mogi das Cruzes, Osasco, Paulínia, Piracicaba, Presidente Prudente, Ribeirão Preto, Santo André, São Bernardo do Campo, São Caetano do Sul, São José do Rio Preto, São José dos Campos, São Paulo, Sorocaba, Taboão da Serra, Valinhos, Vinhedo em São Paulo.
+\subsection {Ministério da Gestão e da Inovação em Serviços Públicos}
+O Ministério da Gestão e da Inovação em Serviços Públicos (MGI) é a entidade responsável pelo anúncio e execução do concurso.
+\subsection {Fundação Cesgranrio}
+A Fundação Cesgranrio é o órgão escolhido para organizar o concurso. 
+\section {Linha do Tempo}
+19 de janeiro a 9 de fevereiro: Período de Inscrições \\ 
+29 de fevereiro: Divulgação dos dados finais de inscrições \\
+29 de abril: Divulgação dos cartões de confirmação \\
+5 de maio: Aplicação das provas \\
+3 de junho: Divulgação dos resultados das provas objetivas e preliminares das provas discursivas e de redação \\
+30 de julho: Divulgação final dos resultados \\
+5 de agosto: Início da convocação para posse e cursos de formação
+\section {Conclusão} 
+O anúncio do Concurso Público Nacional Unificado constitui um marco para a gestão e inovação no setor público brasileiro. Este sistema de seleção busca oferecer igualdade de acesso a cargos públicos por todo o território nacional, promovendo, assim, maior representatividade e diversidade. Com regras claras e procedimentos justos, o "Enem dos Concursos” possui potencial para ser um concurso altamente competitivo e criterioso, preparado para selecionar os candidatos mais qualificados para as vagas disponíveis.
+
+
+\postextual
+\bibliography{concurso_2024}
+\end{document}

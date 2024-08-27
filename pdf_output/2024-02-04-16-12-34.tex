@@ -1,0 +1,221 @@
+\documentclass[
+   article,       
+   12pt,          
+   oneside,       
+   a4paper,       
+   english,       
+   brazil,        
+   sumario=tradicional
+   ]{abntex2}
+
+\usepackage{lmodern}       
+\usepackage[T1]{fontenc}   
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}   
+\usepackage{nomencl}       
+\usepackage{color}         
+\usepackage{graphicx}      
+\usepackage{microtype}     
+\usepackage{background}
+\usepackage{datetime}
+\usepackage{lipsum} 
+\usepackage[brazilian,hyperpageref]{backref}
+\usepackage[alf]{abntex2cite}
+
+\newdateformat{mydate}{\THEDAY\space de \monthname[\THEMONTH], \THEYEAR}
+
+\backgroundsetup{
+   scale=1,
+   angle=0,
+   opacity=1,
+   color=black,
+   contents={\begin{tikzpicture}[remember picture, overlay]
+      \node at ([xshift=-2cm,yshift=-2cm] current page.north east)
+            {\includegraphics[width = 3cm]{logo_02.png}}
+       node at ([xshift=2cm,yshift=-2cm] current page.north west)
+            {\includegraphics[width = 3cm]{conf.png}};
+     \end{tikzpicture}}
+}
+
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+\renewcommand{\backref}{}
+\renewcommand*{\backrefalt}[4]{
+   \ifcase #1
+      Nenhuma citação no texto.
+   \or
+      Citado na página #2.
+   \else
+      Citado #1 vezes nas páginas #2.
+   \fi}
+
+\titulo{Políticas Públicas no Brasil}
+\tituloestrangeiro{ }
+\autor{{Ephor - Linguística Computacional }}
+\local{{Maringá - Brasil \url{https://www.ephor.com.br/}}}
+\data{{\today\space \currenttime}}
+
+\definecolor{blue}{RGB}{41,5,195}
+\makeatletter
+\hypersetup{
+      pdftitle={\@title}, 
+      pdfauthor={\@author},
+      pdfsubject={Correntes da Antropologia},
+       pdfcreator={LaTeX with abnTeX2},
+      pdfkeywords={abnt}{latex}{abntex}{abntex2}{atigo científico}, 
+      colorlinks=true,   
+      linkcolor=blue,    
+      citecolor=blue,    
+      filecolor=magenta, 
+      urlcolor=blue,
+      bookmarksdepth=4
+}
+\makeatother
+\makeindex
+\setlrmarginsandblock{3cm}{3cm}{*}
+\setulmarginsandblock{3cm}{3cm}{*}
+\checkandfixthelayout
+\setlength{\parindent}{1.3cm}
+\setlength{\parskip}{0.2cm}
+\SingleSpacing
+
+\begin{document}
+
+\selectlanguage{brazil}
+\frenchspacing 
+\maketitle
+
+\textual
+\section{Aviso Importante}
+\textbf{Este documento foi gerado usando processamento de linguística computacional auxiliado por inteligência artificial.} Para tanto foram analisadas as seguintes fontes:  \cite{A_CAUSA_E_AS_POLITICAS_DE_DIREITOS_HUMANOS_NO}, \cite{Ciclo_de_Politicas_Publicas_por_que_e_importa}, \cite{Conheca_o_ciclo_das_politicas_publicas__Polit}, \cite{Educacao_Inclusiva_Conheca_o_historico_da_leg}, \cite{Entendendo_a_Tipologia_de_Politicas_Publicas_}, \cite{Escola_Nacional_de_Administracao_Publica__Wik}, \cite{Especialista_em_politicas_publicas_e_gestao_g}, \cite{FEDERALISMO_E_POLITICAS_PUBLICAS_NO_BRASIL_Ho}, \cite{Ministerio_do_Planejamento_e_Orcamento__Wikip}, \cite{Ministro_defende_que_direitos_humanos_precisa}, \cite{Politica_conceito_politicas_publicas_e_partid}, \cite{Politica_publica__o_que_e_tipos_de_politicas_}, \cite{Politica_publica__Wikipedia_a_enciclopedia_li}, \cite{Politicas_publicas__Wikipedia_la_enciclopedia}, \cite{Politicas_Publicas_entenda_o_que_sao_para_que}, \cite{Politicas_Publicas_o_que_sao_e_para_que_serve}, \cite{Politicas_publicas_o_que_sao_e_para_que_serve}, \cite{Politicas_publicas_o_que_sao_quem_faz_e_tipos}, \cite{Politicas_publicas_o_que_sao_tipos_e_exemplos}, \cite{Revista_USP_119__Dossie_1_Democracia_e_politi}, \cite{TCU_Ciclo_das_politicas_publicas__Tudo_o_que_}.
+\textbf{Portanto este conteúdo requer revisão humana, pois pode conter erros.} Decisões jurídicas, de saúde, financeiras ou similares não devem ser tomadas com base somente neste documento. A Ephor - Linguística Computacional não se responsabiliza por decisões ou outros danos oriundos da tomada de decisão sem a consulta dos devidos especialistas.
+A consulta da originalidade deste conteúdo para fins de verificação de plágio pode ser feita em \href{http://www.ephor.com.br}{ephor.com.br}.
+\section{Introdução}
+Este guia explora o conceito, planejamento e implementação de políticas públicas no Brasil, enfatizando a importância dessas ações governamentais no bem-estar social. Políticas públicas impactam todos os cidadãos e são essenciais para promover qualidade de vida em diversas áreas como saúde, educação, meio ambiente, entre outras. Discutiremos também a distinção entre políticas de Estado e políticas de governo, além de apresentar exemplos específicos de políticas públicas brasileiras.\textbackslash{}section\{O que são Políticas Públicas?\}\\Políticas públicas são conjuntos de programas, ações e decisões dos governos, criadas com a intenção de garantir direitos e melhorar a vida da população em várias esferas. Estas políticas podem ser tanto iniciativas de governos específicos quanto diretrizes permanentes que transcendem administrações. As políticas públicas abrangem um amplo espectro de áreas, incluindo saúde, educação, assistência social, meio ambiente, entre outras, visando o bem-estar coletivo.
+\section{Argumentos}
+Políticas Públicas no Brasil\textbackslash{}section\{Introdução\}Este guia explora o conceito, planejamento e implementação de políticas públicas no Brasil, enfatizando a importância dessas ações governamentais no bem-estar social. Políticas públicas impactam todos os cidadãos e são essenciais para promover qualidade de vida em diversas áreas como saúde, educação, meio ambiente, entre outras. Discutiremos também a distinção entre políticas de Estado e políticas de governo, além de apresentar exemplos específicos de políticas públicas brasileiras.\textbackslash{}section\{O que são Políticas Públicas?\}Políticas públicas são conjuntos de programas, ações e decisões dos governos, criadas com a intenção de garantir direitos e melhorar a vida da população em várias esferas. Estas políticas podem ser tanto iniciativas de governos específicos quanto diretrizes permanentes que transcendem administrações. As políticas públicas abrangem um amplo espectro de áreas, incluindo saúde, educação, assistência social, meio ambiente, entre outras, visando o bem-estar coletivo.\textbackslash{}section\{Planejamento e Implementação\}A criação e execução de políticas públicas envolvem um processo detalhado que inclui análise, formulação, adoção, implementação e avaliação. Este processo assegura que as políticas sejam efetivamente orientadas para atender às necessidades do público, promovendo melhorias tangíveis na sociedade. O planejamento rigoroso e uma abordagem estratégica são fundamentais para o sucesso das políticas públicas.\textbackslash{}section\{Entidades\}\textbackslash{}subsection\{Indivíduos\}\textbackslash{}begin\{itemize\}    \textbackslash{}item Leonardo Secchi - Especialista em políticas públicas mencionado no texto.\textbackslash{}end\{itemize\}\textbackslash{}subsection\{Organizações\}\textbackslash{}begin\{itemize\}    \textbackslash{}item Governo Federal, Estadual e Municipal - Entidades responsáveis pela criação e execução de políticas públicas no Brasil.    \textbackslash{}item Iniciativa Privada e Sociedade Civil - Setores que podem participar indiretamente do processo de formulação de políticas públicas.\textbackslash{}end\{itemize\}\textbackslash{}section\{Linha do Tempo\}\textbackslash{}subsection\{Eventos\}\textbackslash{}begin\{itemize\}    \textbackslash{}item Criação e Expansão do Bolsa Família - Exemplo de uma política pública que beneficiou significativamente a população brasileira e que foi proposto para se tornar uma política de Estado.\textbackslash{}end\{itemize\}\textbackslash{}section\{Contradições\}\textbackslash{}subsection\{Positivos\}\textbackslash{}begin\{itemize\}    \textbackslash{}item Políticas públicas promovem equidade e bem-estar social, abrangendo áreas essenciais como saúde e educação.    \textbackslash{}item A participação da sociedade civil e da iniciativa privada pode enriquecer o planejamento e execução das políticas.\textbackslash{}end\{itemize\}\textbackslash{}subsection\{Negativos\}\textbackslash{}begin\{itemize\}    \textbackslash{}item Falta de transparência e centralização do poder pode impedir a eficácia das políticas públicas.    \textbackslash{}item As políticas de governo são susceptíveis a alterações com a troca de administração, o que pode prejudicar a continuidade de programas essenciais.\textbackslash{}end\{itemize\}\textbackslash{}section\{Conclusão\}As políticas públicas desempenham um papel crucial na promoção do bem-estar social no Brasil. Apesar dos desafios, como a necessidade de maior transparência e participação, as políticas públicas continuam sendo fundamentais para garantir direitos e melhorar a qualidade de vida da população. Entender seu planejamento, implementação e impactos é fundamental para todos os cidadãos.\textbackslash{}section\{Questão 1\}Qual é a definição corrente de políticas públicas?\textbackslash{}itemize    \textbackslash{}item Ações isoladas de indivíduos na sociedade.    \textbackslash{}item Decisões empresariais que afetam um grande número de pessoas.    \textbackslash{}item Conjuntos de programas, ações e decisões dos governos visando assegurar direitos de cidadania.    \textbackslash{}item Estratégias de marketing social.\textbackslash{}subsection\{Resposta:\}Conjuntos de programas, ações e decisões dos governos visando assegurar direitos de cidadania.\textbackslash{}section\{Questão 2\}O que diferencia uma política de Estado de uma política de governo?\textbackslash{}itemize    \textbackslash{}item Políticas de Estado são temporárias, enquanto as de governo são permanentes.    \textbackslash{}item Políticas de Estado dependem do governo da vez, enquanto as de governo são inalteráveis.    \textbackslash{}item Políticas de Estado são amparadas pela Constituição e devem ser mantidas independentemente do governo.    \textbackslash{}item Políticas de Estado são implementadas apenas no nível federal, enquanto as de governo no nível estadual e municipal.\textbackslash{}subsection\{Resposta:\}Políticas de Estado são amparadas pela Constituição e devem ser mantidas independentemente do governo.\textbackslash{}section\{Questão 3\}Quais áreas são frequentemente cobertas pelas políticas públicas?\textbackslash{}itemize    \textbackslash{}item Apenas segurança pública e defesa nacional.    \textbackslash{}item Turismo, esportes e entretenimento.    \textbackslash{}item Saúde, educação, meio ambiente, habitação, assistência social, lazer, transporte e segurança.    \textbackslash{}item Somente desenvolvimento econômico e inovação tecnológica.\textbackslash{}subsection\{Resposta:\}Saúde, educação, meio ambiente, habitação, assistência social, lazer, transporte e segurança.\textbackslash{}section\{Questão 4\}Como as políticas públicas são geralmente planejadas e implementadas?\textbackslash{}itemize    \textbackslash{}item Através de decisões arbitrárias do governante em poder.    \textbackslash{}item Mediante votação popular para cada nova política.    \textbackslash{}item Por meio de um processo detalhado que inclui análise, formulação, adoção, implementação e avaliação.    \textbackslash{}item Exclusivamente por organizações não-governamentais.\textbackslash{}subsection\{Resposta:\}Por meio de um processo detalhado que inclui análise, formulação, adoção, implementação e avaliação.\textbackslash{}section\{Questão 5\}Qual é o papel da sociedade civil e da iniciativa privada nas políticas públicas?\textbackslash{}itemize    \textbackslash{}item Nenhum papel, pois as políticas públicas são exclusividade do governo.    \textbackslash{}item Participam diretamente na tomada de decisões de todas as políticas.    \textbackslash{}item Podem participar indiretamente do processo de formulação das políticas.    \textbackslash{}item São responsáveis pela implementação de todas as políticas públicas.\textbackslash{}subsection\{Resposta:\}Podem participar indiretamente do processo de formulação das políticas.\textbackslash{}section\{Questão 6\}Como a falta de transparência e a centralização do poder afetam as políticas públicas?\textbackslash{}itemize    \textbackslash{}item Melhoram a eficácia das políticas públicas, simplificando o processo decisório.    \textbackslash{}item Não têm impacto algum nas políticas públicas.    \textbackslash{}item Permitem uma distribuição mais equitativa dos recursos.    \textbackslash{}item Podem impedir a eficácia das políticas públicas.\textbackslash{}subsection\{Resposta:\}Podem impedir a eficácia das políticas públicas.\textbackslash{}section\{Questão 7\}Por que é importante para os cidadãos entenderem o planejamento e implementação das políticas públicas?\textbackslash{}itemize    \textbackslash{}item Para poderem se opor a todas as políticas propostas pelo governo.    \textbackslash{}item Exclusivamente para fins acadêmicos e de pesquisa.    \textbackslash{}item Para assegurar a participação cidadã e fiscalizar a ação governamental.    \textbackslash{}item Apenas profissionais de políticas públicas precisam entender esses processos.\textbackslash{}subsection\{Resposta:\}Para assegurar a participação cidadã e fiscalizar a ação governamental.\textbackslash{}section\{Questão 8\}Quais são os indicadores de uma política pública eficaz?\textbackslash{}itemize    \textbackslash{}item Populares nas redes sociais e na mídia.    \textbackslash{}item Aprovadas sem debate ou oposição.    \textbackslash{}item Geram melhorias tangíveis na qualidade de vida da população.    \textbackslash{}item Resultam em benefícios econômicos imediatos para o governo.\textbackslash{}subsection\{Resposta:\}Geram melhorias tangíveis na qualidade de vida da população.\textbackslash{}section\{Questão 9\}Qual é o papel das políticas públicas na promoção do bem-estar social?\textbackslash{}itemize    \textbackslash{}item Restringem a liberdade individual em prol do controle governamental.    \textbackslash{}item Promovem equidade e melhoram a qualidade de vida em diversas áreas.    \textbackslash{}item Beneficiam exclusivamente grupos economicamente privilegiados.    \textbackslash{}item Têm um impacto mínimo, sendo mais simbólicas do que efetivas.\textbackslash{}subsection\{Resposta:\}Promovem equidade e melhoram a qualidade de vida em diversas áreas.\textbackslash{}section\{Questão 10\}Como a continuidade de políticas públicas é assegurada entre diferentes governos?\textbackslash{}itemize    \textbackslash{}item Por meio da pressão internacional exclusivamente.    \textbackslash{}item Através da inserção de políticas bem-sucedidas como políticas de Estado.    \textbackslash{}item Somente por decisão unânime do poder legislativo.    \textbackslash{}item A continuidade não é uma preocupação nas políticas públicas.\textbackslash{}subsection\{Resposta:\}Através da inserção de políticas bem-sucedidas como políticas de Estado.
+
+
+\section{Planejamento e Implementação}
+A criação e execução de políticas públicas envolvem um processo detalhado que inclui análise, formulação, adoção, implementação e avaliação. Este processo assegura que as políticas sejam efetivamente orientadas para atender às necessidades do público, promovendo melhorias tangíveis na sociedade. O planejamento rigoroso e uma abordagem estratégica são fundamentais para o sucesso das políticas públicas.
+\section{Entidades}
+\subsection{Indivíduos}
+\begin{itemize}
+    \item Leonardo Secchi - Especialista em políticas públicas mencionado no texto.
+\end{itemize}
+\subsection{Organizações}
+\begin{itemize}
+    \item Governo Federal, Estadual e Municipal - Entidades responsáveis pela criação e execução de políticas públicas no Brasil.
+    \item Iniciativa Privada e Sociedade Civil - Setores que podem participar indiretamente do processo de formulação de políticas públicas.
+\end{itemize}
+\section{Linha do Tempo}
+\subsection{Eventos}
+\begin{itemize}
+    \item Criação e Expansão do Bolsa Família - Exemplo de uma política pública que beneficiou significativamente a população brasileira e que foi proposto para se tornar uma política de Estado.
+\end{itemize}
+\section{Contradições}
+\subsection{Positivos}
+\begin{itemize}
+    \item Políticas públicas promovem equidade e bem-estar social, abrangendo áreas essenciais como saúde e educação.
+    \item A participação da sociedade civil e da iniciativa privada pode enriquecer o planejamento e execução das políticas.
+\end{itemize}
+\subsection{Negativos}
+\begin{itemize}
+    \item Falta de transparência e centralização do poder pode impedir a eficácia das políticas públicas.
+    \item As políticas de governo são susceptíveis a alterações com a troca de administração, o que pode prejudicar a continuidade de programas essenciais.
+\end{itemize}
+\section{Conclusão}
+As políticas públicas desempenham um papel crucial na promoção do bem-estar social no Brasil. Apesar dos desafios, como a necessidade de maior transparência e participação, as políticas públicas continuam sendo fundamentais para garantir direitos e melhorar a qualidade de vida da população. Entender seu planejamento, implementação e impactos é fundamental para todos os cidadãos.
+\section{Questão 1}
+Qual é a definição corrente de políticas públicas?
+\itemize
+    \item Ações isoladas de indivíduos na sociedade.
+    \item Decisões empresariais que afetam um grande número de pessoas.
+    \item Conjuntos de programas, ações e decisões dos governos visando assegurar direitos de cidadania.
+    \item Estratégias de marketing social.
+\subsection{Resposta:}
+Conjuntos de programas, ações e decisões dos governos visando assegurar direitos de cidadania.
+\section{Questão 2}
+O que diferencia uma política de Estado de uma política de governo?
+\itemize
+    \item Políticas de Estado são temporárias, enquanto as de governo são permanentes.
+    \item Políticas de Estado dependem do governo da vez, enquanto as de governo são inalteráveis.
+    \item Políticas de Estado são amparadas pela Constituição e devem ser mantidas independentemente do governo.
+    \item Políticas de Estado são implementadas apenas no nível federal, enquanto as de governo no nível estadual e municipal.
+\subsection{Resposta:}
+Políticas de Estado são amparadas pela Constituição e devem ser mantidas independentemente do governo.
+\section{Questão 3}
+Quais áreas são frequentemente cobertas pelas políticas públicas?
+\itemize
+    \item Apenas segurança pública e defesa nacional.
+    \item Turismo, esportes e entretenimento.
+    \item Saúde, educação, meio ambiente, habitação, assistência social, lazer, transporte e segurança.
+    \item Somente desenvolvimento econômico e inovação tecnológica.
+\subsection{Resposta:}
+Saúde, educação, meio ambiente, habitação, assistência social, lazer, transporte e segurança.
+\section{Questão 4}
+Como as políticas públicas são geralmente planejadas e implementadas?
+\itemize
+    \item Através de decisões arbitrárias do governante em poder.
+    \item Mediante votação popular para cada nova política.
+    \item Por meio de um processo detalhado que inclui análise, formulação, adoção, implementação e avaliação.
+    \item Exclusivamente por organizações não-governamentais.
+\subsection{Resposta:}
+Por meio de um processo detalhado que inclui análise, formulação, adoção, implementação e avaliação.
+\section{Questão 5}
+Qual é o papel da sociedade civil e da iniciativa privada nas políticas públicas?
+\itemize
+    \item Nenhum papel, pois as políticas públicas são exclusividade do governo.
+    \item Participam diretamente na tomada de decisões de todas as políticas.
+    \item Podem participar indiretamente do processo de formulação das políticas.
+    \item São responsáveis pela implementação de todas as políticas públicas.
+\subsection{Resposta:}
+Podem participar indiretamente do processo de formulação das políticas.
+\section{Questão 6}
+Como a falta de transparência e a centralização do poder afetam as políticas públicas?
+\itemize
+    \item Melhoram a eficácia das políticas públicas, simplificando o processo decisório.
+    \item Não têm impacto algum nas políticas públicas.
+    \item Permitem uma distribuição mais equitativa dos recursos.
+    \item Podem impedir a eficácia das políticas públicas.
+\subsection{Resposta:}
+Podem impedir a eficácia das políticas públicas.
+\section{Questão 7}
+Por que é importante para os cidadãos entenderem o planejamento e implementação das políticas públicas?
+\itemize
+    \item Para poderem se opor a todas as políticas propostas pelo governo.
+    \item Exclusivamente para fins acadêmicos e de pesquisa.
+    \item Para assegurar a participação cidadã e fiscalizar a ação governamental.
+    \item Apenas profissionais de políticas públicas precisam entender esses processos.
+\subsection{Resposta:}
+Para assegurar a participação cidadã e fiscalizar a ação governamental.
+\section{Questão 8}
+Quais são os indicadores de uma política pública eficaz?
+\itemize
+    \item Populares nas redes sociais e na mídia.
+    \item Aprovadas sem debate ou oposição.
+    \item Geram melhorias tangíveis na qualidade de vida da população.
+    \item Resultam em benefícios econômicos imediatos para o governo.
+\subsection{Resposta:}
+Geram melhorias tangíveis na qualidade de vida da população.
+\section{Questão 9}
+Qual é o papel das políticas públicas na promoção do bem-estar social?
+\itemize
+    \item Restringem a liberdade individual em prol do controle governamental.
+    \item Promovem equidade e melhoram a qualidade de vida em diversas áreas.
+    \item Beneficiam exclusivamente grupos economicamente privilegiados.
+    \item Têm um impacto mínimo, sendo mais simbólicas do que efetivas.
+\subsection{Resposta:}
+Promovem equidade e melhoram a qualidade de vida em diversas áreas.
+\section{Questão 10}
+Como a continuidade de políticas públicas é assegurada entre diferentes governos?
+\itemize
+    \item Por meio da pressão internacional exclusivamente.
+    \item Através da inserção de políticas bem-sucedidas como políticas de Estado.
+    \item Somente por decisão unânime do poder legislativo.
+    \item A continuidade não é uma preocupação nas políticas públicas.
+\subsection{Resposta:}
+Através da inserção de políticas bem-sucedidas como políticas de Estado.
+
+\postextual
+\bibliography{con_ger_pol_pub}
+\end{document}

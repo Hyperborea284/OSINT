@@ -1,0 +1,124 @@
+\documentclass[
+   article,       
+   12pt,          
+   oneside,       
+   a4paper,       
+   english,       
+   brazil,        
+   sumario=tradicional
+   ]{abntex2}
+
+\usepackage{lmodern}       
+\usepackage[T1]{fontenc}   
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}   
+\usepackage{nomencl}       
+\usepackage{color}         
+\usepackage{graphicx}      
+\usepackage{microtype}     
+\usepackage{background}
+\usepackage{datetime}
+\usepackage{lipsum} 
+\usepackage[brazilian,hyperpageref]{backref}
+\usepackage[alf]{abntex2cite}
+
+\newdateformat{mydate}{\THEDAY\space de \monthname[\THEMONTH], \THEYEAR}
+
+\backgroundsetup{
+   scale=1,
+   angle=0,
+   opacity=1,
+   color=black,
+   contents={\begin{tikzpicture}[remember picture, overlay]
+      \node at ([xshift=-2cm,yshift=-2cm] current page.north east)
+            {\includegraphics[width = 3cm]{logo_02.png}}
+       node at ([xshift=2cm,yshift=-2cm] current page.north west)
+            {\includegraphics[width = 3cm]{conf.png}};
+     \end{tikzpicture}}
+}
+
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+\renewcommand{\backref}{}
+\renewcommand*{\backrefalt}[4]{
+   \ifcase #1
+      Nenhuma citação no texto.
+   \or
+      Citado na página #2.
+   \else
+      Citado #1 vezes nas páginas #2.
+   \fi}
+
+\titulo{Anúncio e Detalhamento do Concurso Público Nacional Unificado (CPNU): o "Enem dos Concursos"}
+\tituloestrangeiro{ }
+\autor{{Ephor - Linguística Computacional }}
+\local{{Maringá - Brasil \url{https://www.ephor.com.br/}}}
+\data{{\today\space \currenttime}}
+
+\definecolor{blue}{RGB}{41,5,195}
+\makeatletter
+\hypersetup{
+      pdftitle={\@title}, 
+      pdfauthor={\@author},
+      pdfsubject={Correntes da Antropologia},
+       pdfcreator={LaTeX with abnTeX2},
+      pdfkeywords={abnt}{latex}{abntex}{abntex2}{atigo científico}, 
+      colorlinks=true,   
+      linkcolor=blue,    
+      citecolor=blue,    
+      filecolor=magenta, 
+      urlcolor=blue,
+      bookmarksdepth=4
+}
+\makeatother
+\makeindex
+\setlrmarginsandblock{3cm}{3cm}{*}
+\setulmarginsandblock{3cm}{3cm}{*}
+\checkandfixthelayout
+\setlength{\parindent}{1.3cm}
+\setlength{\parskip}{0.2cm}
+\SingleSpacing
+
+\begin{document}
+
+\selectlanguage{brazil}
+\frenchspacing 
+\maketitle
+
+\textual
+\section{Aviso Importante}
+\textbf{Este documento foi gerado usando processamento de linguística computacional auxiliado por inteligência artificial.} Para tanto foram analisadas as seguintes fontes:  \cite{A_separacao_dos_tres_poderes_Executivo_Legisl}, \cite{Concurso_Nacional_Unificado_edital_e_retifica}, \cite{Concurso_unificado_a_novidade_do_momentoaclwm}, \cite{Concurso_Unificado_Divulgadas_novas_retificac}, \cite{Enem_dos_Concursos_cerca_de_2_mil_vagas_serao}, \cite{Enem_dos_Concursos_quando_comeca_quanto_custa}, \cite{Enem_dos_concursos_tem_vagas_para_o_Tocantins}, \cite{Inscricoes_para_Enem_dos_Concursos_comecam_ne}, \cite{ldquoEnem_dos_Concursosrdquo_recebe_mais_de_7}, \cite{Saiba_como_vai_funcionar_o_Enem_dos_concursos}.
+\textbf{Portanto este conteúdo requer revisão humana, pois pode conter erros.} Decisões jurídicas, de saúde, financeiras ou similares não devem ser tomadas com base somente neste documento. A Ephor - Linguística Computacional não se responsabiliza por decisões ou outros danos oriundos da tomada de decisão sem a consulta dos devidos especialistas.
+A consulta da originalidade deste conteúdo para fins de verificação de plágio pode ser feita em \href{http://www.ephor.com.br}{ephor.com.br}.
+\section {Introdução}A Ministra de Gestão, Ester Dweck, revelou detalhes referentes ao Concurso Público Nacional Unificado (CPNU), comumente conhecido como \textquotedbl{}Enem dos concursos\textquotedbl{}. O evento marca a primeira vez que um sistema de seleção é realizado em âmbito nacional, visando igualdade de acesso a cargos públicos efetivos em todas as regiões do país. Uma variedade de cargos estão disponíveis, com vagas destinadas para vários grupos: pessoas portadoras de deficiência, negros, indígenas e candidatos de vários níveis de escolaridade.
+\section{Argumentos}
+Quando falamos em separação dos três poderes pensamos imediatamente em Executivo, Legislativo e Judiciário, mas de onde surgiu essa separação? Quais são as atribuições de cada esfera? Há um poder superior ao outro ou existe uma independência harmônica? Como relacionam-se entre si? O Politize! descomplica isso para você!Veja também: o que fazem o poder Executivo e o Legislativo?Ao longo da história diversos autores falaram sobre a corrente Tripartite (separação do governo em três), sendo Aristóteles o pioneiro em sua obra “A Política” que contempla a existência de três órgãos separados a quem cabiam as decisões de Estado. Eram eles o Poder Deliberativo, o Poder Executivo e o Poder Judiciário.Em seguida Locke, em sua obra “Segundo Tratado Sobre o Governo Civil”, defende um Poder Legislativo superior aos demais, o Executivo com a finalidade de aplicar as leis, e o Federativo, mesmo tendo legitimidade, não poderia desvincular-se do Executivo, cabendo a ele cuidar das questões internacionais de governança.Posteriormente, Montesquieu cria a tripartição e as devidas atribuições do modelo mais aceito atualmente, sendo o Poder Legislativo aqueles que fazem as leis para sempre ou para determinada época, bem como, aperfeiçoam ou revogam as já existentes; o Executivo – o que se ocupa o Príncipe ou Magistrado da paz e da guerra -, recebendo e enviando embaixadores, estabelecendo a segurança e prevenindo invasões; e por último, o Judiciário, que dá ao Príncipe ou Magistrado a competência de punir os crimes ou julgar os litígios da ordem civil. Nessa tese, Montesquieu pensa em não deixar em uma única mão as tarefas de legislar, administrar e julgar, já que a concentração de poder tende a gerar o abuso dele.Confira o infográfico que a gente fez para te ajudar a estudar esse tema!Para baixar esse infográfico em alta qualidade, clique aqui!Cabe ao Executivo a administração do Estado, observando as normas vigentes no país, além de governar o povo, executar as leis, propor planos de ação, e administrar os interesses públicos.Este poder é exercido, no âmbito federal, pelo Presidente da República, juntamente com os Ministros que por ele são indicados, os Secretários, os Conselhos de Políticas Públicas e os órgãos da Administração Pública. É a ele que competem os atos de chefia de Estado, quando exerce a titularidade das relações internacionais e de governo e quando assume as relações políticas e econômicas. Além disso, o Presidente dialoga diretamente com o Legislativo, tendo o poder de sancionar ou rejeitar uma lei aprovada pelo Congresso Nacional.Já na esfera estadual, o poder executivo se concentra no governador e seus Secretários Estaduais, e na esfera municipal, no prefeito e seus Secretários Municipais.Para te ajudar a entender, preparamos três vídeos sobre o que faz cada um dos cargos do executivo.1) O que faz o presidente?2) O que faz um governador?3) O que faz um prefeito?Ao Legislativo cabe legislar (ou seja, criar e aprovar as leis) e fiscalizar o Executivo, sendo ambas igualmente importantes. Em outras palavras, exerce função de controle político-administrativo e o financeiro-orçamentário. Pelo primeiro controle, cabe a análise do gerenciamento do Estado, podendo, inclusive, questionar atos do Poder Executivo, pelo segundo controle, aprovar ou reprovar contas públicas.Este poder é exercido pelos Deputados Federais e Senadores, no âmbito federal, pelos Deputados Estaduais, no âmbito estadual, e pelos Vereadores, no âmbito municipal. Você também pode conferir melhor o que fazem deputados e senadores nos vídeos abaixo.1) O que faz um Deputado Federal?2) O que faz um Deputado Estadual?3) O que faz um Senador?O Judiciário tem como função interpretar as leis e julgar os casos de acordo com as regras constitucionais e leis criadas pelo Legislativo, aplicando a lei a um caso concreto, que lhe é apresentado como resultado de um conflito de interesses.O Judiciário é representado pelos juízes, ministros, desembargadores. E atenção: pela Constituição Federal, os promotores de justiça não são integrantes do Poder Judiciário, mas sim do Ministério Público.Todo homem que detém o poder tende a abusar dele, afirma Montesquieu. Seguindo o pensamento dessa corrente, tudo estaria perdido se o poder de fazer as leis, o de executar as resoluções públicas e o de punir crimes ou solver pendências entre particulares se reunissem num só homem ou associação de homens. A separação dos poderes, portanto, é uma forma de descentralizar o poder e evitar abusos, fazendo com que um poder controle o outro ou, ao menos, seja um contrapeso. Vamos exemplificar:• O Poder Executivo em relação ao Legislativo: adoção de Medidas Provisórias, com força de Lei, conforme determina o artigo 62 da Constituição Federal de 1988 – “Em caso de relevância e urgência, o Presidente da República poderá adotar Medidas Provisórias, com força de lei, devendo submetê-las de imediato ao Congresso Nacional”.• O Poder Legislativo em relação ao Executivo: compete ao legislativo processar e julgar o Presidente e Vice-Presidente da República, assim como promover processo de impeachment.• Poder Judiciário em relação ao Legislativo: observa-se o Art. 53. §1º, que diz que “os deputados e senadores desde a expedição do diploma serão submetidos a julgamento perante o Supremo Tribunal Federal”.Esse mecanismo assegura que nenhum poder irá sobrepor-se ao outro, trazendo uma independência harmônica nas relações de governança. Existem diversas outras medidas de relacionamento desses poderes tendo sempre como escopo o equilíbrio.Na nossa atual Constituição Federal, a divisão dos Poderes entre Executivo, Legislativo e Judiciário é Cláusula Pétrea, aquelas que não são objetos de deliberações/mudanças, portanto não pode-se elaborar uma PEC para alterá-la.E aí, conseguiu entender como se dá a separação dos três poderes? Se você ficou com dúvidas específicas sobre o Executivo, Legislativo ou Judiciário, não deixe elas de lado, teremos a honra de respondê-las nos comentários!• MONTESQUIEU, Charles de Secondat. O Espírito das Leis. Introdução, trad. e notas de Pedro Vieira Mota. 7ª ed. São Paulo. Saraiva: 2000.
+
+
+\section {Processo de Inscrição e Seleção}
+As inscrições para o CPNU ocorrerão de 19 de janeiro a 9 de fevereiro. Será cobrada uma taxa de inscrição com valor dependentes do nível educacional do candidato, contudo há várias entidades que poderão pedir isenção. O candidato deve fazer sua escolha de setor e cargo durante a inscrição, ordenando suas opções por preferência. A expectativa é de que o concurso atraia entre 2 e 3 milhões de candidatos.
+\subsection {Estrutura da Prova}
+A programação da prova, organizada pela Fundação Cesgranrio, prevê a aplicação da prova em 5 de maio, abrangendo 220 cidades e dividida em dois turnos. Será uma prova objetiva com 20 perguntas de conhecimentos gerais pela manhã. No turno da tarde, serão aplicadas provas dissertativas e específicas para candidatos de nível superior, e uma redação para os de nível médio.
+\section {Resultados e Convocações}
+A divulgação dos resultados do concurso se dará em duas etapas. A primeira, com as notas das provas objetivas e os resultados preliminares das provas dissertativas e redações, será divulgada em 3 de junho. A divulgação final, com os resultados finais será feita em 30 de julho. A convocação dos aprovados começa a partir de 5 de agosto, oferecendo salários que variam entre R\$3.7 mil e R\$22.9 mil.
+\section {Entidades}
+\subsection {Órgãos Oferecendo Vagas}
+Vários órgãos ligados ao governo estão oferecendo vagas em diversas áreas, dentre eles: Bom Jesus, Corrente, Floriano, Parnaíba, Picos, São Raimundo Nonato e Teresina no Piauí; Belford Roxo, Cabo Frio, Campos dos Goytacazes, Duque de Caxias, Niterói, Nova Iguaçu, Rio de Janeiro, São Gonçalo, São João de Meriti, Volta Redonda no Rio de Janeiro; Araçatuba, Bauru, Caçapava, Campinas, Guarulhos, Hortolândia, Itapeva, Jacareí, Marília, Mauá, Mogi das Cruzes, Osasco, Paulínia, Piracicaba, Presidente Prudente, Ribeirão Preto, Santo André, São Bernardo do Campo, São Caetano do Sul, São José do Rio Preto, São José dos Campos, São Paulo, Sorocaba, Taboão da Serra, Valinhos, Vinhedo em São Paulo.
+\subsection {Ministério da Gestão e da Inovação em Serviços Públicos}
+O Ministério da Gestão e da Inovação em Serviços Públicos (MGI) é a entidade responsável pelo anúncio e execução do concurso.
+\subsection {Fundação Cesgranrio}
+A Fundação Cesgranrio é o órgão escolhido para organizar o concurso. 
+\section {Linha do Tempo}
+19 de janeiro a 9 de fevereiro: Período de Inscrições \\ 
+29 de fevereiro: Divulgação dos dados finais de inscrições \\
+29 de abril: Divulgação dos cartões de confirmação \\
+5 de maio: Aplicação das provas \\
+3 de junho: Divulgação dos resultados das provas objetivas e preliminares das provas discursivas e de redação \\
+30 de julho: Divulgação final dos resultados \\
+5 de agosto: Início da convocação para posse e cursos de formação
+\section {Conclusão} 
+O anúncio do Concurso Público Nacional Unificado constitui um marco para a gestão e inovação no setor público brasileiro. Este sistema de seleção busca oferecer igualdade de acesso a cargos públicos por todo o território nacional, promovendo, assim, maior representatividade e diversidade. Com regras claras e procedimentos justos, o "Enem dos Concursos” possui potencial para ser um concurso altamente competitivo e criterioso, preparado para selecionar os candidatos mais qualificados para as vagas disponíveis.
+
+
+\postextual
+\bibliography{concurso_2024}
+\end{document}
